@@ -1,0 +1,19 @@
+{
+  "unversionedId": "program",
+  "id": "program",
+  "title": "Program",
+  "description": "Contribute to the discussion on Github!",
+  "source": "@site/docs/program.md",
+  "sourceDirName": ".",
+  "slug": "/program",
+  "permalink": "/docs/program",
+  "editUrl": "https://github.com/madices/madices.github.io/edit/master/docs/program.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "title": "Program",
+    "sidebar_label": "Program"
+  }
+}

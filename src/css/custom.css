@@ -1,0 +1,80 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=block');
+
+:root {
+  --ifm-color-primary: #6639A6;
+  --ifm-color-primary-dark: #6639A6;
+  --ifm-color-primary-darker: #6639A6;
+  --ifm-color-primary-darkest: #6639A6;
+  --ifm-color-primary-light: #6639A6;
+  --ifm-color-primary-lighter: #6639A6;
+  --ifm-color-primary-lightest: #6639A6;
+  --ifm-code-font-size: 95%;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+.navbar{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: auto;
+}
+
+.navbar__link{
+  padding: 4px 8px;
+  display: block;
+  margin-right: 10px;
+  height: auto;
+  border-radius: 8px;
+  letter-spacing: -.25px;
+  font-weight: 600;
+}
+
+.navbar__link:hover{
+  background-color: #eee;
+}
+
+.homepage-img{
+  width: 400px;
+  /* height: 100px; */
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.hero{
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.main-container{
+  padding-top: 1px;
+  padding-bottom: 48px;
+}
+
+
+.navbar-sidebar{
+  box-shadow: none;
+}
+
+@media (max-width: 425px){
+  .navbar__items{
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "current",
+          "versionPath": "/docs",
+          "tagsPath": "/docs/tags",
+          "versionEditUrl": "https://github.com/madices/madices.github.io/edit/master/docs",
+          "versionEditUrlLocalized": "https://github.com/madices/madices.github.io/edit/master/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": null,
+          "versionBadge": false,
+          "versionClassName": "docs-version-current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/kevinmaikjablonka/Dropbox (LSMO)/Documents/open_source/MADICES.github.io/sidebars.js",
+          "contentPath": "/Users/kevinmaikjablonka/Dropbox (LSMO)/Documents/open_source/MADICES.github.io/docs",
+          "contentPathLocalized": "/Users/kevinmaikjablonka/Dropbox (LSMO)/Documents/open_source/MADICES.github.io/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "program",
+              "id": "program",
+              "title": "Program",
+              "description": "Contribute to the discussion on Github!",
+              "source": "@site/docs/program.md",
+              "sourceDirName": ".",
+              "slug": "/program",
+              "permalink": "/docs/program",
+              "editUrl": "https://github.com/madices/madices.github.io/edit/master/docs/program.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "title": "Program",
+                "sidebar_label": "Program"
+              }
+            },
+            {
+              "unversionedId": "speakers",
+              "id": "speakers",
+              "title": "Speakers",
+              "description": "To be announced soon!",
+              "source": "@site/docs/speakers.md",
+              "sourceDirName": ".",
+              "slug": "/speakers",
+              "permalink": "/docs/speakers",
+              "editUrl": "https://github.com/madices/madices.github.io/edit/master/docs/speakers.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "title": "Speakers",
+                "sidebar_label": "Speakers"
+              }
+            }
+          ],
+          "sidebars": {},
+          "mainDocId": "program",
+          "categoryGeneratedIndices": []
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}
