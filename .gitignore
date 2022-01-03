@@ -86,5 +86,5 @@ tags
 
 # Support for Project snippet scope
 !.vscode/*.code-snippets
-
+.docusaurus/
 # End of https://www.toptal.com/developers/gitignore/api/react,macos,visualstudiocode,vim
