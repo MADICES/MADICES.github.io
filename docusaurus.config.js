@@ -64,6 +64,11 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
               to: 'docs/speakers',
               position: 'left',
             },
+            {
+              label: 'Organizers',
+              to: 'docs/organizers',
+              position: 'left',
+            },
           ],
         },
         colorMode: {
