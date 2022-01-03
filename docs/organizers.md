@@ -15,3 +15,5 @@ sidebar_label: Organizers
 
 - [Nicola Marzari](http://theossrv1.epfl.ch/Main/Contact) 
 - [Berend Smit](https://www.epfl.ch/labs/lsmo/smit/)
+
+Kindly supported by [CECAM](https://www.cecam.org).
