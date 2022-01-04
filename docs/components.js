@@ -22,8 +22,21 @@ export function Card({ name, link, img, organization }) {
   );
 }
 
-
-export function EventCard({time, title, speaker, room }) {
-    return (<div className="col-1 col-sm-1">
-    <div class="card"> </div> <h2>{title}</h2> </div>)
+export function EventCard({ time, title, description, speaker, room }) {
+  return (
+    <div className="row" style={{ paddingBottom: "10px" }}>
+      <div class="card" style={{ width: "100%" }}>
+        {" "}
+        <h5>
+          {" "}
+          {time} | {title}
+        </h5>{" "}
+        <p style={{fontSize: "small"}}>{description} </p>
+        <p style={{fontSize: "small"}}>
+          Speaker: {speaker} <br></br>
+          Room: {room}
+        </p>
+      </div>
+    </div>
+  );
 }

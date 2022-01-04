@@ -15,7 +15,7 @@ Sessions will be schedules such that participants in Europe, North America, and 
 
 ### Monday, Feb 7
 
-export const day1Program = [
+export const day1ProgramAfternoon = [
   {
     time: "14:00 - 14:45",
     title: "Screening of introductory talks by organizers",
@@ -48,9 +48,48 @@ export const day1Program = [
   },
 ];
 
+export const day1ProgramEvening = [
+  {
+    time: "18:00 - 19:00",
+    title: "Re-screening of intro talks",
+    speaker: "Organizers",
+    room: "Zoom",
+  },
+  {
+    time: "19:00 - 20:30",
+    title: " Breakout 1",
+    speaker: "Everyone",
+    room: "Zoom",
+  },
+  {
+    time: "20:30 - 21:00",
+    title: " Summing up Breakout 1 ",
+    speaker: "Moderators",
+    room: "Zoom",
+  },
+  {
+    time: "21:00 - 21:30",
+    title: "Socializing",
+    speaker: "everyone",
+    room: "Gather",
+  },
+];
+
+#### Afternoon Session
+
 <div className="container">
-  <div className="row">
-    {day1Program.map((props, idx) => (
+  <div>
+    {day1ProgramAfternoon.map((props, idx) => (
+      <EventCard key={idx} {...props} />
+    ))}
+  </div>
+</div>
+
+#### Evening Session
+
+<div className="container">
+  <div>
+    {day1ProgramEvening.map((props, idx) => (
       <EventCard key={idx} {...props} />
     ))}
   </div>
@@ -58,7 +97,20 @@ export const day1Program = [
 
 ### Tuesday, Feb 8
 
+#### Morning Session 
+
+#### Afternoon Session 
+
+#### Evening Session 
+
 ### Wednesday, Feb 9
+
+
+#### Morning Session 
+
+#### Afternoon Session 
+
+#### Evening Session 
 
 ## Registration
 
