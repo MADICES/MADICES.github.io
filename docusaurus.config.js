@@ -96,7 +96,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
               items: [
                 {
                   label: 'GitHub',
-                  to: 'https://github.com/madices/MADICES-2020',
+                  to: 'https://github.com/madices/MADICES-2022',
                 },
               ],
             },
