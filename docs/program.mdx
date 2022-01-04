@@ -1,0 +1,65 @@
+---
+title: Program
+sidebar_label: Program
+---
+
+import { EventCard } from "./components.js";
+
+## Program
+
+:::warning
+The program is still tentative and in development. You can contribute to the [discussion on Github](https://github.com/MADICES/MADICES-2022)!
+:::
+
+Sessions will be schedules such that participants in Europe, North America, and Asia can easily attend at least one session per day. All times below are UTC.
+
+### Monday, Feb 7
+
+export const day1Program = [
+  {
+    time: "14:00 - 14:45",
+    title: "Screening of introductory talks by organizers",
+    speaker: "Organizers",
+    room: "Zoom",
+  },
+  {
+    time: "14:45 - 15:30",
+    title: "Keynote and questions",
+    speaker: "TBA",
+    room: "Zoom",
+  },
+  {
+    time: "15:30 - 16:00",
+    title: "Presentations and discussions",
+    speaker: "TBA",
+    room: "Zoom",
+  },
+  {
+    time: "16:00 - 16:30",
+    title: "Panel discussion",
+    speaker: "TBA",
+    room: "Zoom",
+  },
+  {
+    time: "16:30 - 17:30",
+    title: "Socializing",
+    speaker: "everyone",
+    room: "Gather",
+  },
+];
+
+<div className="container">
+  <div className="row">
+    {day1Program.map((props, idx) => (
+      <EventCard key={idx} {...props} />
+    ))}
+  </div>
+</div>
+
+### Tuesday, Feb 8
+
+### Wednesday, Feb 9
+
+## Registration
+
+Registration is open on the [CECAM website](https://www.cecam.org/workshop-details/1165).
