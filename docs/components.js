@@ -7,7 +7,7 @@ export function Card({ name, link, img, organization }) {
         <a href={link}>
           <h3>{name}</h3>
         </a>
-        <h4>{organization}</h4>
+        <h4 style={{width: "200px"}}>{organization}</h4>
         <div class="card-image">
           <div
             class="thumb"

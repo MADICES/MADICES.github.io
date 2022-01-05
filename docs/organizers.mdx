@@ -7,51 +7,54 @@ import { Card } from "./components.js";
 
 ## Core Organization Team
 
-export const organizers = [
+export let organizers = [
   {
     name: "Kevin Maik Jablonka",
     link: "https://kjablonka.com/",
     img: "https://kjablonka.com/images/portrait.jpg",
-    organization: "EPFL"
+    organization: "EPFL",
   },
   {
     name: "Matthew Evans",
     link: "https://ml-evs.science/",
     img: "https://ml-evs.science/assets/me_round.jpeg",
-    organization: "UCLouvain"
+    organization: "UCLouvain",
   },
   {
     name: "Shyam Dwaraknath",
     link: "https://www.linkedin.com/in/shyam-dwaraknath/",
     img: "https://media-exp1.licdn.com/dms/image/C5603AQF2cntaOXCpgg/profile-displayphoto-shrink_800_800/0/1640149716831?e=1646870400&v=beta&t=eQdbCaPhxjKDsy_vz1KGIJp8CgJsrSWCw7WEFTukaSg",
-    organization: "Luxembourg Institute of Science and Technology"
+    organization: "Luxembourg Institute of Science and Technology",
   },
   {
     name: "Sebastiaan Huber",
     link: "http://sphuber.net/",
     img: "https://www.nccr-catalysis.ch/site/assets/files/1080/sphuber_portrait_nobg-removebg_grey-1.500x500.png",
-    organization: "NCCR Catalysis"
+    organization: "NCCR Catalysis",
   },
   {
-    name: "Carlo Antonio Pignedoli",
+    name: "Carlo Pignedoli",
     link: "https://www.empa.ch/web/s205/carlo-pignedoli",
     img: "https://nccr-marvel.ch/_Resources/Persistent/160f316c56db3a20424f8fa1679b3373535a4ab2/CarloPignedoli-184x232.jpg",
-    organization: "EMPA"
+    organization: "EMPA",
   },
   {
     name: "Stefan Kuhn",
     link: "https://www.linkedin.com/in/stefan-kuhn-756bb74/?originalSubdomain=uk",
     img: "",
-    organization: "De Montfort University"
+    organization: "De Montfort University",
   },
-     
 ];
 
 <div className="container">
   <div className="row">
-    {organizers.map((props, idx) => (
-      <Card key={idx} {...props} />
-    ))}
+    {organizers
+      .sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      })
+      .map((props, idx) => (
+        <Card key={idx} {...props} />
+      ))}
   </div>
 </div>
 
@@ -60,6 +63,6 @@ export const organizers = [
 - [Nicola Marzari](http://theossrv1.epfl.ch/Main/Contact)
 - [Berend Smit](https://www.epfl.ch/labs/lsmo/smit/)
 
-
 ## Support
+
 Kindly supported by [CECAM](https://www.cecam.org) and the [NCCR Marvel](https://nccr-marvel.ch)
