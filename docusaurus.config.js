@@ -55,6 +55,11 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
           items: [
             // left
             {
+              label: 'Workshop objectives',
+              to: 'docs/objectives',
+              position: 'left',
+            },
+            {
               label: 'Program',
               to: 'docs/program',
               position: 'left',
