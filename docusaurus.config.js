@@ -74,7 +74,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
         colorMode: {
           defaultMode: 'light',
           disableSwitch: false,
-          respectPrefersColorScheme: true,
+          respectPrefersColorScheme: false,
         },
         announcementBar: {
           content:
