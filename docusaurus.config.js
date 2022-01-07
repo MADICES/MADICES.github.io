@@ -92,7 +92,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
               items: [
                 {
                   label: 'Discord',
-                  to: 'https://discord.gg/hZVetCB5',
+                  to: 'https://discord.gg/Fjm9v4rmTW',
                 },
               ],
             },
