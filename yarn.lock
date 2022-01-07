@@ -3322,7 +3322,7 @@
   dependencies:
     "domelementtype" "1"
 
-"domhandler@^4.0.0", "domhandler@^4.2.0", "domhandler@^4.3.0":
+"domhandler@^4.0.0", "domhandler@^4.2.0", "domhandler@^4.2.2", "domhandler@^4.3.0", "domhandler@4.3.0":
   "integrity" "sha512-fC0aXNQXqKSFTr2wDNZDhsEYjCiYsDWl3D01kwt25hm1YIPyDGHvvi3rw+PLqHAl/m71MaiF7d5zvBr0p5UB2g=="
   "resolved" "https://registry.npmjs.org/domhandler/-/domhandler-4.3.0.tgz"
   "version" "4.3.0"
@@ -4154,6 +4154,14 @@
     "readable-stream" "^2.0.1"
     "wbuf" "^1.1.0"
 
+"html-dom-parser@1.0.4":
+  "integrity" "sha512-ThM/vK/18R5/cVB9UsqhNqbJU7LE2BmSA7C/FjYV88wIDW75GSUpvSE/JxE4mJ8bOuU6Kp15/I1giM2JbD+ieA=="
+  "resolved" "https://registry.npmjs.org/html-dom-parser/-/html-dom-parser-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "domhandler" "4.3.0"
+    "htmlparser2" "7.2.0"
+
 "html-entities@^2.3.2":
   "integrity" "sha512-c3Ab/url5ksaT0WyleslpBEthOzWhrjQbg75y7XUsfSzi3Dgzt0l8w5e7DylRn15MTlMMD58dTfzddNS2kcAjQ=="
   "resolved" "https://registry.npmjs.org/html-entities/-/html-entities-2.3.2.tgz"
@@ -4171,6 +4179,16 @@
     "param-case" "^3.0.4"
     "relateurl" "^0.2.7"
     "terser" "^5.10.0"
+
+"html-react-parser@^1.4.5":
+  "integrity" "sha512-dxo0z1G9b3mS1VGmcVw4cUGwVsEwkJZZ7r29pOSdE69JukJyFTCL1I6TXSEp2p1LAHvuO6ZBiEVp2M5lXqKLAg=="
+  "resolved" "https://registry.npmjs.org/html-react-parser/-/html-react-parser-1.4.5.tgz"
+  "version" "1.4.5"
+  dependencies:
+    "domhandler" "4.3.0"
+    "html-dom-parser" "1.0.4"
+    "react-property" "2.0.0"
+    "style-to-js" "1.1.0"
 
 "html-tags@^3.1.0":
   "integrity" "sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg=="
@@ -4214,6 +4232,16 @@
     "domhandler" "^4.0.0"
     "domutils" "^2.5.2"
     "entities" "^2.0.0"
+
+"htmlparser2@7.2.0":
+  "integrity" "sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog=="
+  "resolved" "https://registry.npmjs.org/htmlparser2/-/htmlparser2-7.2.0.tgz"
+  "version" "7.2.0"
+  dependencies:
+    "domelementtype" "^2.0.1"
+    "domhandler" "^4.2.2"
+    "domutils" "^2.8.0"
+    "entities" "^3.0.1"
 
 "http-cache-semantics@^4.0.0":
   "integrity" "sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ=="
@@ -6080,6 +6108,11 @@
     "@types/react" "*"
     "prop-types" "^15.6.2"
 
+"react-property@2.0.0":
+  "integrity" "sha512-kzmNjIgU32mO4mmH5+iUyrqlpFQhF8K2k7eZ4fdLSOPFrD1XgEuSBv9LDEgxRXTMBqMd8ppT0x6TIzqE5pdGdw=="
+  "resolved" "https://registry.npmjs.org/react-property/-/react-property-2.0.0.tgz"
+  "version" "2.0.0"
+
 "react-router-config@^5.1.1":
   "integrity" "sha512-DuanZjaD8mQp1ppHjgnnUnyOlqYXZVjnov/JzFhjLEwd3Z4dYjMSnqrEzzGThH47vpCOqPPwJM2FtthLeJ8Pbg=="
   "resolved" "https://registry.npmjs.org/react-router-config/-/react-router-config-5.1.1.tgz"
@@ -6130,7 +6163,7 @@
     "use-composed-ref" "^1.0.0"
     "use-latest" "^1.0.0"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.0.2 || ^16.0.0 || ^17.0.0", "react@^16.13.1", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@^17.0.0 || ^16.3.0 || ^15.5.4", "react@^17.0.1", "react@>= 16.8.0 < 18.0.0", "react@>=0.14.9", "react@>=15", "react@>=16.3.0", "react@17.0.2":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.0.2 || ^16.0.0 || ^17.0.0", "react@^16.13.1", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@^17.0.0 || ^16.3.0 || ^15.5.4", "react@^17.0.1", "react@>= 16.8.0 < 18.0.0", "react@>=0.14.9", "react@>=15", "react@>=16.3.0", "react@0.14 || 15 || 16 || 17", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -6901,6 +6934,13 @@
   "integrity" "sha1-PFMZQukIwml8DsNEhYwobHygpgo="
   "resolved" "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
   "version" "2.0.1"
+
+"style-to-js@1.1.0":
+  "integrity" "sha512-1OqefPDxGrlMwcbfpsTVRyzwdhr4W0uxYQzeA2F1CBc8WG04udg2+ybRnvh3XYL4TdHQrCahLtax2jc8xaE6rA=="
+  "resolved" "https://registry.npmjs.org/style-to-js/-/style-to-js-1.1.0.tgz"
+  "version" "1.1.0"
+  dependencies:
+    "style-to-object" "0.3.0"
 
 "style-to-object@^0.3.0", "style-to-object@0.3.0":
   "integrity" "sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA=="

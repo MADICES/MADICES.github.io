@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 export function Card({ name, link, img, organization }) {
   /* Create Card with name and image */
   return (
@@ -7,7 +8,7 @@ export function Card({ name, link, img, organization }) {
         <a href={link}>
           <h3>{name}</h3>
         </a>
-        <h4 style={{width: "200px"}}>{organization}</h4>
+        <h4 style={{ width: "200px" }}>{organization}</h4>
         <div class="card-image">
           <div
             class="thumb"
@@ -31,9 +32,9 @@ export function EventCard({ time, title, description, speaker, room }) {
           {" "}
           {time} | {title}
         </h5>{" "}
-        <p style={{fontSize: "small"}}>{description} </p>
-        <p style={{fontSize: "small"}}>
-          Speaker: {speaker} <br></br>
+        <p style={{ fontSize: "small" }}>{description} </p>
+        <p style={{ fontSize: "small" }}>
+          Speaker: {parse(speaker)} <br></br>
           Room: {room}
         </p>
       </div>
