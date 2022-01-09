@@ -1,12 +1,17 @@
 import React from "react";
 import parse from "html-react-parser";
-export function Card({ name, link, img, organization }) {
+export function Card({ name, link, img, organization, imgcr }) {
   /* Create Card with name and image */
+  let imagecredit = "";
+  if (imgcr) {
+    imagecredit = parse(imgcr);
+  }
+ 
   return (
     <div className="col-12 col-sm-4">
       <div class="card">
         <a href={link}>
-          <h3>{name}</h3>
+          <h3 style={{ width: "200px" }} >{name}</h3>
         </a>
         <h4 style={{ width: "200px" }}>{organization}</h4>
         <div class="card-image">
@@ -18,6 +23,7 @@ export function Card({ name, link, img, organization }) {
             {" "}
           </div>
         </div>
+        {<div style={{ color: ":#808080", fontSize: ".3em", width: "200px"  }}>{imagecredit}</div>}
       </div>
     </div>
   );
