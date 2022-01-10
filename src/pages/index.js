@@ -42,6 +42,7 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div> */}
+              <h3>Register for free on the <a target="_blank" rel="noopener noreferrer" href="https://www.cecam.org/workshop-details/1165">CECAM website</a>!</h3>
               
               <h2> Description </h2>
               <p>
