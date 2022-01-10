@@ -25,7 +25,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
             path: 'docs',
             sidebarPath: 'sidebars.js',
             editUrl:
-              'https://github.com/madices/madices.github.io/edit/master/',
+              'https://github.com/madices/madices.github.io/edit/main/',
             versions: {
               current: {
                 label: 'current',
