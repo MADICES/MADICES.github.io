@@ -5,6 +5,16 @@ sidebar_label: Speakers
 
 import { Card } from "./components.js";
 
+export const keynote = [
+  {
+    name: "Joshua Schrier",
+    link: "https://www.fordham.edu/info/28651/joshua_schrier",
+    img: "https://news.fordham.edu/wp-content/uploads/2021/03/Shrier-1078-702x336.jpg",
+    organization: "Fordham University",
+  }
+]
+
+
 export const speakers = [
   {
     name: "Luc Patiny",
@@ -111,6 +121,15 @@ export const speakers = [
 
 <div className="container">
   <div className="row">
+    {keynote
+      .map((props, idx) => (
+        <Card key={idx} {...props} />
+      ))}
+  </div>
+</div>
+
+<div className="container">
+  <div className="row">
     {speakers
       .sort(function (a, b) {
         return a.name.localeCompare(b.name);
@@ -120,5 +139,3 @@ export const speakers = [
       ))}
   </div>
 </div>
-
-More to be announced soon!
