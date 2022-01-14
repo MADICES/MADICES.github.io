@@ -45,7 +45,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          hideOnScroll: true,
+          hideOnScroll: false,
           logo: {
             alt: "MADICES",
             src: "img/svg/c_no_bg.svg",
@@ -71,6 +71,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
             {
               label: "Organizers",
               to: "docs/organizers",
+              position: "left",
+            },
+            {
+              label: "Registration",
+              to: "https://www.cecam.org/workshop-details/1165",
               position: "left",
             },
           ],
