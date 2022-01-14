@@ -1,6 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
-export function Card({ name, link, img, organization, imgcr }) {
+export function Card({ name, link, img, organization, imgcr, talk_title }) {
   /* Create Card with name and image */
   let imagecredit = "";
   if (imgcr) {
