@@ -6,9 +6,9 @@ export function Card({ name, link, img, organization, imgcr }) {
   if (imgcr) {
     imagecredit = parse(imgcr);
   }
-  let talk_title = "";
-  if (title) {
-     talk_title = title;
+  let talktitle = "";
+  if (talk_title) {
+     talktitle = talk_title;
   }
 
   return (
@@ -18,7 +18,7 @@ export function Card({ name, link, img, organization, imgcr }) {
           <h3 style={{ width: "300px" }} >{name}</h3>
         </a>
         <h4 style={{ width: "300px" }}>{organization}</h4>
-        <h5 style={{ width: "300px", fontStyle: "italic" }}>{talk_title}</h5>
+        <h5 style={{ width: "300px", fontStyle: "italic" }}>{talktitle}</h5>
         <div class="card-image">
           <div
             class="thumb"
