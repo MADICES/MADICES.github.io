@@ -6,14 +6,15 @@ export function Card({ name, link, img, organization, imgcr }) {
   if (imgcr) {
     imagecredit = parse(imgcr);
   }
- 
+
   return (
     <div className="col-12 col-sm-4">
       <div class="card">
         <a href={link}>
-          <h3 style={{ width: "200px" }} >{name}</h3>
+          <h3 style={{ width: "300px" }} >{name}</h3>
         </a>
-        <h4 style={{ width: "200px" }}>{organization}</h4>
+        <h4 style={{ width: "300px" }}>{organization}</h4>
+        {h5 style={{ width: "300px", font-style: "italic" }}>{title}</div>}
         <div class="card-image">
           <div
             class="thumb"
@@ -23,7 +24,7 @@ export function Card({ name, link, img, organization, imgcr }) {
             {" "}
           </div>
         </div>
-        {<div style={{ color: ":#808080", fontSize: ".3em", width: "200px"  }}>{imagecredit}</div>}
+        {<div style={{ color: ":#808080", fontSize: ".3em", width: "300px"  }}>{imagecredit}</div>}
       </div>
     </div>
   );
