@@ -17,12 +17,26 @@ const mapAppointmentData = (appointment) => ({
   startDate: gmtTime(appointment.start.dateTime),
   endDate: gmtTime(appointment.end.dateTime),
   title: appointment.summary,
+  location: appointment.location,
 });
 
-
 const appointmentComponent = (props) => {
-    return <Appointments.Appointment {...props} style={{ ...props.style, backgroundColor: '#6639A6' } } />;
-  };
+  if (props.data?.location.includes("Zoom")) {
+    return (
+      <Appointments.Appointment
+        {...props}
+        style={{ ...props.style, backgroundColor: "#6639A6" }}
+      />
+    );
+  } else {
+    return (
+        <Appointments.Appointment
+          {...props}
+          style={{ ...props.style, backgroundColor: "#3490de" }}
+        />
+      );
+  }
+};
 
 async function getData() {
   const dataUrl = [
@@ -64,7 +78,7 @@ export function Calendar(props) {
       <Scheduler data={data.items.map(mapAppointmentData)} height={660}>
         <ViewState currentDate={props.currentDate} currentViewName={"Day"} />
         <DayView startDayHour={props.startHour} endDayHour={props.endHour} />
-        <Appointments appointmentComponent={appointmentComponent}/>
+        <Appointments appointmentComponent={appointmentComponent} />
       </Scheduler>
     </Paper>
   );
