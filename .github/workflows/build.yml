@@ -6,7 +6,7 @@ on:
     branches:
       - main
   schedule:
-    0 1 * * *
+    -cron: * 1 * * *
 
 jobs:
   deploy:
