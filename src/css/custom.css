@@ -7,21 +7,21 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=block');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=block");
 
 :root {
-  --ifm-color-primary: #6639A6;
-  --ifm-color-primary-dark: #6639A6;
-  --ifm-color-primary-darker: #6639A6;
-  --ifm-color-primary-darkest: #6639A6;
-  --ifm-color-primary-light: #6639A6;
-  --ifm-color-primary-lighter: #6639A6;
-  --ifm-color-primary-lightest: #6639A6;
+  --ifm-color-primary: #6639a6;
+  --ifm-color-primary-dark: #6639a6;
+  --ifm-color-primary-darker: #6639a6;
+  --ifm-color-primary-darkest: #6639a6;
+  --ifm-color-primary-light: #6639a6;
+  --ifm-color-primary-lighter: #6639a6;
+  --ifm-color-primary-lightest: #6639a6;
   --ifm-code-font-size: 95%;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -31,50 +31,48 @@ body{
   padding: 0 var(--ifm-pre-padding);
 }
 
-
-.navbar{
+.navbar {
   padding-top: 16px;
   padding-bottom: 16px;
   height: auto;
 }
 
-.navbar__link{
+.navbar__link {
   padding: 4px 8px;
   display: block;
   margin-right: 10px;
   height: auto;
   border-radius: 8px;
-  letter-spacing: -.25px;
+  letter-spacing: -0.25px;
   font-weight: 600;
 }
 
-.navbar__link:hover{
+.navbar__link:hover {
   background-color: #eee;
 }
 
-.homepage-img{
+.homepage-img {
   width: 400px;
   /* height: 100px; */
   display: block;
   margin: 0 auto 10px;
 }
 
-.hero{
+.hero {
   /* border-bottom: 1px solid #ddd; */
 }
 
-.main-container{
+.main-container {
   padding-top: 1px;
   padding-bottom: 48px;
 }
 
-
-.navbar-sidebar{
+.navbar-sidebar {
   box-shadow: none;
 }
 
-@media (max-width: 425px){
-  .navbar__items{
+@media (max-width: 425px) {
+  .navbar__items {
     margin-bottom: 10px;
   }
 }
@@ -96,4 +94,12 @@ body{
   margin: 5px;
   background-position: center center;
   background-size: cover;
+}
+
+.margin-right-md {
+  margin-right: 7em;
+}
+
+.margin-left-md {
+  margin-left: 7em;
 }
