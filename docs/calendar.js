@@ -21,7 +21,14 @@ const mapAppointmentData = (appointment) => ({
 });
 
 const appointmentComponent = (props) => {
-  if (props.data?.location.includes("Zoom")) {
+  if (props.data?.title.includes("Breakout")) {
+    return (
+      <Appointments.Appointment
+        {...props}
+        style={{ ...props.style, backgroundColor: "#9a0200" }}
+      />
+    );
+  } else if (props.data?.location.includes("Zoom")) {
     return (
       <Appointments.Appointment
         {...props}
