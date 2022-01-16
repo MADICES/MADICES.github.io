@@ -1,27 +1,30 @@
 import React from "react";
 import parse from "html-react-parser";
-export function Card({ name, link, img, organization, imgcr, talk_title }) {
+import classNames from 'classnames';
+
+export function Card({ name, link, img, organization, imgcr, talkTitle, className }) {
   /* Create Card with name and image */
   let imagecredit = "";
   if (imgcr) {
     imagecredit = parse(imgcr);
   }
-  let talktitle = "";
-  if (talk_title) {
-     talktitle = talk_title;
+  let talkT = "";
+  if (talkTitle) {
+    talkT = talkTitle;
   }
+  const cardClasses = classNames("col-12 col-sm-4", className);
 
   return (
-    <div className="col-12 col-sm-4">
-      <div class="card">
+    <div className={cardClasses} style={{width: "320px"}}>
+      <div className="card">
         <a href={link}>
           <h3 style={{ width: "300px" }} >{name}</h3>
         </a>
         <h4 style={{ width: "300px" }}>{organization}</h4>
-        <h5 style={{ width: "300px", fontStyle: "italic" }}>{talktitle}</h5>
-        <div class="card-image">
+        <h5 style={{ width: "300px", fontStyle: "italic" }}>{talkT}</h5>
+        <div className="card-image">
           <div
-            class="thumb"
+            className="thumb"
             style={{ backgroundImage: `url(${img})` }}
             title={name}
           >
@@ -37,7 +40,7 @@ export function Card({ name, link, img, organization, imgcr, talk_title }) {
 export function EventCard({ time, title, description, speaker, room }) {
   return (
     <div className="row" style={{ paddingBottom: "10px" }}>
-      <div class="card" style={{ width: "100%" }}>
+      <div className="card" style={{ width: "100%" }}>
         {" "}
         <h5>
           {" "}

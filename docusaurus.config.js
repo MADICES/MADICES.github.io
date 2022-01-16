@@ -40,6 +40,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
         }),
       ],
     ],
+  
     plugins: [],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
