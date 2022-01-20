@@ -18,10 +18,10 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
     <div className={cardClasses} style={{width: "320px"}}>
       <div className="card">
         <a href={link}>
-          <h3 style={{ width: "300px" }} >{name}</h3>
+          <h3 style={{ width: "300px"}} >{name}</h3>
         </a>
-        <h4 style={{ width: "300px" }}>{organization}</h4>
-        <h4 style={{ width: "300px", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <h4 style={{ width: "300px", height: "2.5em" }}>{organization}</h4>
+        <h4 style={{ width: "300px", height: "3.5em", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
         <div className="card-image">
           <div
             className="thumb"
