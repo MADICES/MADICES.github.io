@@ -8,7 +8,7 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
   if (imgcr) {
     imagecredit = parse(imgcr);
   }
-  let talkT = "";
+  let talkT = "Title TBC";
   if (talkTitle) {
     talkT = talkTitle;
   }
@@ -43,7 +43,7 @@ export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, c
   if (imgcr) {
     imagecredit = parse(imgcr);
   }
-  let talkT = "";
+  let talkT = "Title TBC";
   if (talkTitle) {
     talkT = talkTitle;
   }
@@ -53,10 +53,10 @@ export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, c
     <div className={cardClasses} style={{width: "80%", textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
       <div className="card">
         <a href={link}>
-          <h3 style={{ textAlign: "center" }} >{name}</h3>
+          <h3 style={{ fontSize: "1.5em", textAlign: "center" }} >{name}</h3>
         </a>
-        <h4 style={{ height: "2.5em", textAlign: "center" }}>{organization}</h4>
-        <h4 style={{ height: "3.5em", textAlign: "center", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <h4 style={{ fontSize: "1.5em", height: "2.5em", textAlign: "center" }}>{organization}</h4>
+        <h4 style={{ fontSize: "1.5em", height: "3.5em", textAlign: "center", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
         <div className="card-image">
           <div
             className="thumb"
