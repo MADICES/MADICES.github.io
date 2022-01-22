@@ -37,6 +37,41 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
   );
 }
 
+export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, className }) {
+  /* Create Card with name and image */
+  let imagecredit = "";
+  if (imgcr) {
+    imagecredit = parse(imgcr);
+  }
+  let talkT = "";
+  if (talkTitle) {
+    talkT = talkTitle;
+  }
+  const cardClasses = classNames("col-12 col-sm-4", className);
+
+  return (
+    <div className={cardClasses} style={{width: "80%", textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
+      <div className="card">
+        <a href={link}>
+          <h3 style={{ textAlign: "center" }} >{name}</h3>
+        </a>
+        <h4 style={{ height: "2.5em", textAlign: "center" }}>{organization}</h4>
+        <h4 style={{ height: "3.5em", textAlign: "center", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <div className="card-image">
+          <div
+            className="thumb"
+            style={{ backgroundImage: `url(${img})`, width: "700px" }}
+            title={name}
+          >
+            {" "}
+          </div>
+        </div>
+        {<div style={{ color: ":#808080", fontSize: ".3em", width: "300px"  }}>{imagecredit}</div>}
+      </div>
+    </div>
+  );
+}
+
 export function EventCard({ time, title, description, speaker, room }) {
   return (
     <div className="row" style={{ paddingBottom: "10px" }}>
