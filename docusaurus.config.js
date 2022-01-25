@@ -75,6 +75,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               position: "left",
             },
             {
+              label: "Resources",
+              to: "docs/resources",
+              position: "left",
+            },
+            {
               label: "Registration",
               to: "https://www.cecam.org/workshop-details/1165",
               position: "left",
