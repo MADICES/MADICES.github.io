@@ -21,7 +21,7 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
           <h3 style={{ width: "300px"}} >{name}</h3>
         </a>
         <h4 style={{ width: "300px", height: "2.5em" }}>{organization}</h4>
-        <h4 style={{ width: "300px", height: "3.5em", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <h4 style={{ width: "300px", height: talkT.length > 0 ? "3.5em" : "0em", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
         <div className="card-image">
           <div
             className="thumb"
