@@ -1,0 +1,3 @@
+[submodule "MADICES-2022"]
+	path = MADICES-2022
+	url = git@github.com:MADICES/MADICES-2022
