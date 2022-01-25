@@ -52,6 +52,17 @@ export let organizers = [
   },
 ];
 
+export let facilitators = [
+  {
+      name: "Aude Faillétaz",
+      organization: "EPFL CECAM",
+      link: "https://people.epfl.ch/aude.failletaz",
+      img: "https://people.epfl.ch/private/common/photos/links/320055.jpg?ts=1643128863",
+      talkTitle: "",
+  }
+]
+
+
 <div className="container">
   <div className="row">
     {organizers
@@ -63,6 +74,21 @@ export let organizers = [
       ))}
   </div>
 </div>
+
+## Facilitators
+
+<div className="container">
+  <div className="row">
+    {facilitators
+      .sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      })
+      .map((props, idx) => (
+        <Card key={idx} {...props} />
+      ))}
+  </div>
+</div>
+
 
 ## Scientific advisory board
 
