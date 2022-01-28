@@ -9,7 +9,7 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
     imagecredit = parse(imgcr);
   }
   let talkT = "Title TBC";
-  if (talkTitle) {
+  if (talkTitle || talkTitle == "") {
     talkT = talkTitle;
   }
   const cardClasses = classNames("col-12 col-sm-4", className);
