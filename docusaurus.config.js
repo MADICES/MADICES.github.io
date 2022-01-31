@@ -40,7 +40,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
         }),
       ],
     ],
-  
+
     plugins: [],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -108,15 +108,15 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                   label: "Code of Conduct",
                   to: "docs/coc",
                 },
-              ],
-            },
-            {
-              title: "Social",
-              items: [
                 {
                   label: "GitHub",
                   to: "https://github.com/madices/MADICES-2022",
                 },
+              ],
+            },
+            {
+              title: "Contact",
+              items: [{ label: 'Email', to: 'https://mailhide.io/e/TurK9QvA' },
               ],
             },
           ],
