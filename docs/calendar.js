@@ -82,7 +82,7 @@ export function Calendar(props) {
 
   return (
     <Paper>
-      <Scheduler data={data.items.map(mapAppointmentData)} height={660}>
+      <Scheduler data={data.items.map(mapAppointmentData)} height={660} width={500}>
         <ViewState currentDate={props.currentDate} currentViewName={"Day"} />
         <DayView startDayHour={props.startHour} endDayHour={props.endHour} />
         <Appointments appointmentComponent={appointmentComponent} />
