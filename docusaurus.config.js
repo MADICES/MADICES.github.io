@@ -45,7 +45,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
     {
         name: "resources", 
         sourceBaseUrl: "https://raw.githubusercontent.com/MADICES/MADICES-2022/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "resources", // the base directory to output to.
+        outDir: "docs", // the base directory to output to.
         documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
     }]],
     themeConfig:
@@ -86,11 +86,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
             items: [
               {
                 label: 'Glossary',
-                to: 'resources/glossary.md',
+                to: 'docs/glossary',
               },
               {
                 label: 'Awesome list',
-                to: 'resources/awesome_interoperability.md',
+                to: 'docs/awesome_interoperability',
               },
             ]}, 
             {
