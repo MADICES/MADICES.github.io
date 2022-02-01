@@ -41,7 +41,13 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
       ],
     ],
 
-    plugins: [],
+    plugins: [["docusaurus-plugin-remote-content",
+    {
+        name: "resources", 
+        sourceBaseUrl: "https://raw.githubusercontent.com/MADICES/MADICES-2022/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        outDir: "resources", // the base directory to output to.
+        documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
+    }]],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
@@ -67,18 +73,26 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
             {
               label: "Speakers",
               to: "docs/speakers",
-              position: "left",
+              position: "left", 
             },
             {
               label: "Organizers",
               to: "docs/organizers",
               position: "left",
             },
-            {
-              label: "Resources",
-              to: "docs/resources",
-              position: "left",
-            },
+            {     type: 'dropdown',
+            label: 'Resources',
+            position: 'left',
+            items: [
+              {
+                label: 'Glossary',
+                to: 'resources/glossary.md',
+              },
+              {
+                label: 'Awesome list',
+                to: 'resources/awesome_interoperability.md',
+              },
+            ]}, 
             {
               label: "Registration",
               to: "https://www.cecam.org/workshop-details/1165",
