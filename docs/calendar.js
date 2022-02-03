@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Paper from '@mui/material/Paper'
+import React, { useState, useEffect, useRef } from "react";
+import Paper from "@mui/material/Paper";
 import { ViewState } from "@devexpress/dx-react-scheduler";
 import {
   Scheduler,
@@ -8,6 +8,10 @@ import {
 } from "@devexpress/dx-react-scheduler-material-ui";
 const PUBLIC_KEY = "AIzaSyBRTHcbaEfYtMKncP36WEuKyiqTYvcUm4g";
 const CALENDAR_ID = "7i8i4lb012dsglucaclv8avfo8@group.calendar.google.com";
+
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+
+const queryClient = new QueryClient();
 
 const gmtTime = (date) =>
   new Date(date).toLocaleString("en-US", { timeZone: "GMT" });
@@ -37,11 +41,11 @@ const appointmentComponent = (props) => {
     );
   } else {
     return (
-        <Appointments.Appointment
-          {...props}
-          style={{ ...props.style, backgroundColor: "#3490de" }}
-        />
-      );
+      <Appointments.Appointment
+        {...props}
+        style={{ ...props.style, backgroundColor: "#3490de" }}
+      />
+    );
   }
 };
 
@@ -53,40 +57,51 @@ async function getData() {
     PUBLIC_KEY,
   ].join("");
 
-  return fetch(dataUrl).then((response) => response.json());
+  return fetch(dataUrl, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    mode: "cors",
+  }).then((response) => response.json());
 }
 
-export function Calendar(props) {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
 
-  // useEffect with an empty dependency array works the same way as componentDidMount
-  useEffect(async () => {
-    try {
-      // set loading to true before calling API
-      setLoading(true);
-      const data = await getData();
-      console.log(data);
-      setData(data);
-      // switch loading to false after fetch is complete
-      setLoading(false);
-    } catch (error) {
-      // add error handling here
-      setLoading(false);
-      console.log(error);
-    }
-  }, []);
+function MyCalendar(myProps) {
+  const { isLoading, error, data, isFetching } = useQuery("calendarData", () =>
+    getData()
+  );
 
-  // return a Spinner when loading is true
-  if (loading) return <span>Loading</span>;
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
 
   return (
     <Paper>
-      <Scheduler data={data.items.map(mapAppointmentData)} height={660} width={500}>
-        <ViewState currentDate={props.currentDate} currentViewName={"Day"} />
-        <DayView startDayHour={props.startHour} endDayHour={props.endHour} />
+      <Scheduler
+        data={data.items.map(mapAppointmentData)}
+        height={660}
+        width={500}
+      >
+        <ViewState currentDate={myProps.currentDate} currentViewName={"Day"} />
+        <DayView
+          startDayHour={myProps.startHour}
+          endDayHour={myProps.endHour}
+        />
         <Appointments appointmentComponent={appointmentComponent} />
       </Scheduler>
     </Paper>
+  );
+}
+
+const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+export function Calendar(props) {
+  if (isSafari){
+    return <div> Please use another browser (Chrome/Firefox) to view the Calendar </div>
+  }
+  return (
+    <QueryClientProvider client={queryClient}>
+     <MyCalendar {... props} />
+    </QueryClientProvider>
   );
 }
