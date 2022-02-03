@@ -11,6 +11,8 @@ const CALENDAR_ID = "7i8i4lb012dsglucaclv8avfo8@group.calendar.google.com";
 
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 
+import { isSafari } from "react-device-detect";
+
 const queryClient = new QueryClient();
 
 const gmtTime = (date) =>
@@ -65,7 +67,6 @@ async function getData() {
   }).then((response) => response.json());
 }
 
-
 function MyCalendar(myProps) {
   const { isLoading, error, data, isFetching } = useQuery("calendarData", () =>
     getData()
@@ -93,15 +94,54 @@ function MyCalendar(myProps) {
   );
 }
 
-const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-export function Calendar(props) {
-  if (isSafari){
-    return <div> Please use another browser (Chrome/Firefox) to view the Calendar </div>
-  }
+function Calendar(props) {
   return (
     <QueryClientProvider client={queryClient}>
-     <MyCalendar {... props} />
+      <MyCalendar {...props} />
     </QueryClientProvider>
+  );
+}
+
+
+export function CalendarPage() {
+ try {
+  if (isSafari) {
+    return (
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Etc%2FGMT&showTz=1&mode=AGENDA&hl=en&src=N2k4aTRsYjAxMmRzZ2x1Y2FjbHY4YXZmbzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23B39DDB"
+        // style="border:solid 1px #777"
+        width="800"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    );
+  }} catch (e) {
+    return (
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Etc%2FGMT&showTz=1&mode=AGENDA&hl=en&src=N2k4aTRsYjAxMmRzZ2x1Y2FjbHY4YXZmbzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23B39DDBB"
+        // style="border:solid 1px #777"
+        width="800"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    );
+  }
+  return (
+    <div>
+      <h3>First day </h3>
+      <div>
+        <Calendar currentDate="2022-2-7" startHour="14" endHour="23" />
+      </div>
+      <h3>Second day</h3>
+      <div>
+        <Calendar currentDate="2022-2-8" startHour="9" endHour="23" />
+      </div>
+      <h3> Third day</h3>
+      <div>
+        <Calendar currentDate="2022-2-9" startHour="9" endHour="17" />
+      </div>
+    </div>
   );
 }
