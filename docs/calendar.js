@@ -130,17 +130,23 @@ export function CalendarPage() {
   }
   return (
     <div>
+      <div className='container' style={{marginBottom: "2em"}}>
       <h3>First day </h3>
       <div>
         <Calendar currentDate="2022-2-7" startHour="14" endHour="23" />
       </div>
+      </div>
+      <div className='container' style={{marginBottom: "2em"}}>
       <h3>Second day</h3>
       <div>
         <Calendar currentDate="2022-2-8" startHour="9" endHour="23" />
       </div>
+      </div>
+      <div className='container' style={{marginBottom: "2em"}} >
       <h3> Third day</h3>
       <div>
         <Calendar currentDate="2022-2-9" startHour="9" endHour="17" />
+      </div>
       </div>
     </div>
   );
