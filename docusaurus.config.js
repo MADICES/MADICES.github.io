@@ -93,11 +93,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                 to: 'docs/awesome_interoperability',
               },
             ]}, 
-            {
-              label: "Registration",
-              to: "https://www.cecam.org/workshop-details/1165",
-              position: "left",
-            },
+            // {
+            //   label: "Registration",
+            //   to: "https://www.cecam.org/workshop-details/1165",
+            //   position: "left",
+            // },
           ],
         },
         colorMode: {
@@ -105,10 +105,10 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           disableSwitch: false,
           respectPrefersColorScheme: false,
         },
-        announcementBar: {
-          content:
-            '⭐️ Register for free on the <a target="_blank" rel="noopener noreferrer" href="https://www.cecam.org/workshop-details/1165">CECAM website</a>! ⭐️',
-        },
+        // announcementBar: {
+        //   content:
+        //     '⭐️ Register for free on the <a target="_blank" rel="noopener noreferrer" href="https://www.cecam.org/workshop-details/1165">CECAM website</a>! ⭐️',
+        // },
         footer: {
           links: [
             {
