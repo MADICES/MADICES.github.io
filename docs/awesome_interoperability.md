@@ -16,6 +16,7 @@
 - [Versioning of data schema: Translate your data with lenses](https://www.inkandswitch.com/cambria/): Blog posts discusses the challenges and potential solutions for dealing with evolving data schema. 
 - [Basic tabular data annotation from frictionless data](https://specs.frictionlessdata.io/table-schema/#name)
 
+See also the [Semantic Python Overview](https://github.com/pysemtec/semantic-python-overview) list.
 
 ## Initiatives 
 
@@ -29,6 +30,7 @@
 
 - [RDA/CODATA Materials Data, Infrastructure & Interoperability IG](https://www.rd-alliance.org/groups/rdacodata-materials-data-infrastructure-interoperability-ig.html): Interest Group of the Research Data Alliance (RDA) that aims to foster exchange on material data.
 
+- [Materials Research Data Alliance (MaRDA)](https://www.marda-alliance.org/): a community network focused on developing the open, accessible, and interoperable materials data that fuels the Materials Genome Initiative (MGI).
 
 
 ## Related compilations
