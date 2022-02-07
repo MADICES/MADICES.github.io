@@ -116,7 +116,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               items: [
                 {
                   label: "Discord",
-                  to: "https://discord.gg/Fjm9v4rmTW",
+                  to: "https://discord.gg/r9kSbrRs9H",
                 },
                 {
                   label: "Code of Conduct",
