@@ -88,4 +88,5 @@ tags
 !.vscode/*.code-snippets
 .docusaurus/
 build/
+.env
 # End of https://www.toptal.com/developers/gitignore/api/react,macos,visualstudiocode,vim
