@@ -6,7 +6,7 @@ import {
   DayView,
   Appointments,
 } from "@devexpress/dx-react-scheduler-material-ui";
-const PUBLIC_KEY = "AIzaSyBRTHcbaEfYtMKncP36WEuKyiqTYvcUm4g";
+const PUBLIC_KEY = process.env.CALENDAR_API_KEY;
 const CALENDAR_ID = "7i8i4lb012dsglucaclv8avfo8@group.calendar.google.com";
 
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";

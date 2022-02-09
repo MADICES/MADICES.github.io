@@ -41,13 +41,19 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
       ],
     ],
 
-    plugins: [["docusaurus-plugin-remote-content",
-    {
-        name: "resources", 
-        sourceBaseUrl: "https://raw.githubusercontent.com/MADICES/MADICES-2022/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs", // the base directory to output to.
-        documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
-    }]],
+    plugins: [
+      [
+        "docusaurus-plugin-remote-content",
+        {
+          name: "resources",
+          sourceBaseUrl:
+            "https://raw.githubusercontent.com/MADICES/MADICES-2022/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+          outDir: "docs", // the base directory to output to.
+          documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
+        },
+      ],
+      ["docusaurus2-dotenv", {systemvars: true}],
+    ],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
@@ -73,26 +79,28 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
             {
               label: "Speakers",
               to: "docs/speakers",
-              position: "left", 
+              position: "left",
             },
             {
               label: "Organizers",
               to: "docs/organizers",
               position: "left",
             },
-            {     type: 'dropdown',
-            label: 'Resources',
-            position: 'left',
-            items: [
-              {
-                label: 'Glossary',
-                to: 'docs/glossary',
-              },
-              {
-                label: 'Awesome list',
-                to: 'docs/awesome_interoperability',
-              },
-            ]}, 
+            {
+              type: "dropdown",
+              label: "Resources",
+              position: "left",
+              items: [
+                {
+                  label: "Glossary",
+                  to: "docs/glossary",
+                },
+                {
+                  label: "Awesome list",
+                  to: "docs/awesome_interoperability",
+                },
+              ],
+            },
             // {
             //   label: "Registration",
             //   to: "https://www.cecam.org/workshop-details/1165",
@@ -130,8 +138,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
             },
             {
               title: "Contact",
-              items: [{ label: 'Email', to: 'https://mailhide.io/e/TurK9QvA' },
-              ],
+              items: [{ label: "Email", to: "https://mailhide.io/e/TurK9QvA" }],
             },
           ],
           logo: {
