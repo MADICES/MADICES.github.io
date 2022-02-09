@@ -23,6 +23,8 @@ jobs:
           npm i -g yarn
           yarn install --frozen-lockfile
       - name: Build
+        env:
+          CALENDAR_API_KEY: ${{ env.CALENDAR_API_KEY }}
         run: yarn docusaurus build
       - name: Deploy to GitHub pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
