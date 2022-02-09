@@ -24,7 +24,7 @@ jobs:
           yarn install --frozen-lockfile
       - name: Build
         env:
-          CALENDAR_API_KEY: ${{ env.CALENDAR_API_KEY }}
+          CALENDAR_API_KEY: ${{ secrets.CALENDAR_API_KEY }}
         run: yarn docusaurus build
       - name: Deploy to GitHub pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
