@@ -37,7 +37,7 @@ function Home() {
         {/* {features && features.length > 0 && ( */}
           <section className={styles.features}>
             <div className="container">
-                <div>All the recorded talks are now available <a href="https://www.youtube.com/playlist?list=PLI0jkoDO64_g0R--1QAGDKanujEOpg5J_">in this playlist on the CECAM YouTube Channel</a></div>
+                <p>All the recorded talks are now available <a href="https://www.youtube.com/playlist?list=PLI0jkoDO64_g0R--1QAGDKanujEOpg5J_">in this playlist on the CECAM YouTube Channel</a></p>
               {/* <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
