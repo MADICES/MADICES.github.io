@@ -28,7 +28,7 @@ function Home() {
       >
       <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
-          <img className="homepage-img" src="img/svg/c_no_bg.svg"/>
+          //<img className="homepage-img" src="img/svg/c_no_bg.svg"/>
           <h1 className="hero__title">CECAM workshop February 7-9 2022</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
         </div>
