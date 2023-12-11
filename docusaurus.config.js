@@ -77,11 +77,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               position: "left",
             },
             {
-              label: "Speakers",
-              to: "docs/speakers",
-              position: "left",
-            },
-            {
               label: "Organizers",
               to: "docs/organizers",
               position: "left",
@@ -150,6 +145,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           logo: {
             alt: "MADICES",
             src: "img/svg/c_no_bg.svg",
+            srcDark: "img/svg/w_no_bg.svg",
           },
           copyright: "MADICES Organization Team",
         },
