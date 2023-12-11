@@ -6,7 +6,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
   module.exports = {
-    title: "MADICES 2022",
+    title: "MADICES 2024",
     tagline:
       "Machine actionable data for chemical sciences:  Bridging experiments, simulations, and machine learning for spectral data",
     url: "https://madices.github.io",
@@ -77,11 +77,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               position: "left",
             },
             {
-              label: "Speakers",
-              to: "docs/speakers",
-              position: "left",
-            },
-            {
               label: "Organizers",
               to: "docs/organizers",
               position: "left",
@@ -101,11 +96,17 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                 },
               ],
             },
-            // {
-            //   label: "Registration",
-            //   to: "https://www.cecam.org/workshop-details/1165",
-            //   position: "left",
-            // },
+             {
+               label: "Registration (open soon)",
+               to: "https://www.cecam.org",
+               disabled: true,
+               position: "left",
+             },
+            {
+                label: "MADICES 2022",
+                to: "2022",
+                position: "right",
+            },
           ],
         },
         colorMode: {
@@ -132,7 +133,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                 },
                 {
                   label: "GitHub",
-                  to: "https://github.com/madices/MADICES-2022",
+                  to: "https://github.com/madices",
                 },
               ],
             },
@@ -144,8 +145,9 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           logo: {
             alt: "MADICES",
             src: "img/svg/c_no_bg.svg",
+            srcDark: "img/svg/w_no_bg.svg",
           },
-          copyright: "MADICES 2022",
+          copyright: "MADICES Organization Team",
         },
         image: "img/svg/c_no_bg.svg",
         prism: {

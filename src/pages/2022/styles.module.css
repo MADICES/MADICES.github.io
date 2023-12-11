@@ -5,30 +5,7 @@
  * and scoped locally.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
-
-html {
-  font-family: "Karla", sans-serif;
-}
-
-:root {
-  --ifm-code-font-size: 95%;
-  --ifm-heading-font-family: "Karla", sans-serif;
-}
-
-[data-theme='dark'] {
-  --ifm-color-primary: plum;
-}
-
-[data-theme='light'] {
-  --ifm-color-primary: #6639a6;
-}
-
-strong {
-  font-color: var(--ifm-color-primary);
-}
-
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -59,8 +36,3 @@ strong {
   height: 200px;
   width: 200px;
 }
-
-.homepage-img {
-  background-color: #000;
-}
-
