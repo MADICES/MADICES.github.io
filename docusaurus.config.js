@@ -97,8 +97,14 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               ],
             },
              {
-               label: "Registration (open soon)",
-               to: "https://www.cecam.org",
+               label: "Discussions",
+               to: "https://github.com/MADICES/MADICES-2024/discussions",
+               disabled: true,
+               position: "left",
+             },
+             {
+               label: "Registration",
+               to: "https://www.cecam.org/workshop-details/1321",
                disabled: true,
                position: "left",
              },
