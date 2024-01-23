@@ -22,30 +22,24 @@
 - [Basic tabular data annotation from frictionless data](https://specs.frictionlessdata.io/table-schema/#name)
 - [rdf-tabular](https://github.com/ruby-rdf/rdf-tabular). Also see [this talk](https://www.youtube.com/watch?v=qIXcnSCOyZs)
 - [Research Object Crates](https://www.researchobject.org/), a schema.org-based container specification for the serialization of research data.
+- [ELN file format](https://github.com/TheELNConsortium/TheELNFileFormat), an archive file specification based on Research Object Crates.
 
 See also the [Semantic Python Overview](https://github.com/pysemtec/semantic-python-overview) list.
 
 ## Initiatives 
 
 - [NFDI4Chem](https://www.nfdi4chem.de/): Initiative to build an open and FAIR infrastructure for research data management in chemistry with an associated [Knowledge Base](https://knowledgebase.nfdi4chem.de) on how to be FAIR in chemistry.
-
 - [Blue Obelisk](https://blueobelisk.github.io/): Internet group promoting reusable chemistry via open source software development. [📄](https://pubs.acs.org/doi/10.1021/ci050400b) [📄](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-3-37)
-
 - [GO FAIR Chemistry Implementation Network](https://www.go-fair.org/implementation-networks/overview/chemistryin/): Goals are "to enhance the open, FAIR and effective communication of chemical knowledge within the chemical sciences and between chemistry and other disciplines" and "to enable chemists and chemistry to contribute to the achievement of the UN Global Sustainable Development goals" (direct quotes from the website). [📄](https://www.mitpressjournals.org/doi/full/10.1162/dint_a_00035).
-
 - [Chemistry Research Data IG](https://www.rd-alliance.org/groups/chemistry-research-data-interest-group.html): Interest Group of the Research Data Alliance (RDA) that aims to foster exchange on chemical data.
-
 - [RDA/CODATA Materials Data, Infrastructure & Interoperability IG](https://www.rd-alliance.org/groups/rdacodata-materials-data-infrastructure-interoperability-ig.html): Interest Group of the Research Data Alliance (RDA) that aims to foster exchange on material data.
-
 - [Materials Research Data Alliance (MaRDA)](https://www.marda-alliance.org/): a community network focused on developing the open, accessible, and interoperable materials data that fuels the Materials Genome Initiative (MGI).
-
+- [The ELN Consortium](https://github.com/theelnconsortium): a consortium of ELN vendors interested in improving interoperability
 
 ## Related compilations
 
 - [Awesome Materials Informatics](https://github.com/tilde-lab/awesome-materials-informatics): In contrast to this compilation, [Awesome Materials Informatics](https://github.com/tilde-lab/awesome-materials-informatics) focuses more on computational materials science.
-
 - [FAIRsharing.org](https://fairsharing.org) domain collections for [Chemistry](https://fairsharing.org/collection/Chemistry) and [Semantic Assets for Materials Science](https://fairsharing.org/collection/SemanticAssetsMatSci).
-
 - [FAIRsFAIR ACME-FAIR Guide: Defining Data Interoperability Frameworks](https://zenodo.org/record/5775552) - one section in a 7-part set of recommendations for ensuring FAIR practice across domains.
 
 ## Recommended by participants 
@@ -67,10 +61,14 @@ See also the [Semantic Python Overview](https://github.com/pysemtec/semantic-pyt
 - [RXNO](https://www.ebi.ac.uk/ols/ontologies/rxno) - name reaction ontology
 - [OWL](https://www.w3.org/OWL/) - Web ontology language
 - [ChEBI](https://www.ebi.ac.uk/chebi/) - Chemical Entities of Biological Interest is a chemical database and ontology of molecular entities
+
+### Electronic Laboratory Notebooks
+
+- [Chemotion](https://www.chemotion.net/chemotionsaurus/index.html) - Electronic lab notebook, focussed on organic chemistry, developed at KIT
+- [eLabFTW](https://www.elabftw.net) - Electronic lab notebook, field agnostic, developed by Deltablot
   
 ### Tools
 - [PyStow](https://github.com/cthoyt/pystow) - for reproducible downloading of data in various computational Workflows in Python
-- [Chemotion](https://www.chemotion.net/chemotionsaurus/index.html) - Electronic lab notebook, focussed on organic chemistry, developed at KIT
 - [rdflib](https://github.com/RDFLib/rdflib) - Python libary to deal with RDF
 - [LinkML](https://linkml.io/) -- see above
 - [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) - a toolbox of various ontology related tools such as [ROBOT](https://github.com/ontodev/robot), [owltools](https://github.com/owlcollab/owltools), [dosdp-tools](https://github.com/INCATools/dosdp-tools) and many more, bundled as a docker image, a set of executable workflows for managing your ontologies continuous integration, quality control, releases and dynamic imports
