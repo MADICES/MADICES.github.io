@@ -90,3 +90,15 @@ export function EventCard({ time, title, description, speaker, room }) {
     </div>
   );
 }
+
+export function Sponsor({ name, link, img, className }) {
+  const classes = classNames("col-12 col-sm-4", className);
+
+  return (
+    <div className={classes}>
+      <a href={link}>
+        <img className="sponsor-img" src={img} alt={name} />
+      </a>
+    </div>
+  );
+}

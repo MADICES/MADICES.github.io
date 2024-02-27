@@ -1,0 +1,33 @@
+---
+title: Workshop sponsors
+sidebar_label: Sponsors
+---
+
+import { Sponsor } from "./components.js";
+
+MADICES 2 is sponsored by the following organisations:
+
+export let sponsors = [
+  {
+    name: "CECAM",
+    link: "https://www.cecam.org/",
+    img: "https://www.cecam.org/themes/cecam/assets/images/logo.png?height=1075&width=1000",
+  },
+  {
+    name: "PREMISE",
+    link: "https://ord-premise.github.io",
+    img: "https://ord-premise.github.io/assets/img/logos/PREMISE-logo.svg?height=1075&width=1000",
+  },
+];
+
+<div className="container">
+  <div className="row">
+    {sponsors
+      .sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      })
+      .map((props, idx) => (
+        <Sponsor key={idx} {...props} />
+      ))}
+  </div>
+</div>
