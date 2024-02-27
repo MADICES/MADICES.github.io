@@ -1,0 +1,45 @@
+---
+title: Workshop sponsors
+sidebar_label: Sponsors
+---
+
+import { Sponsor } from "./components.js";
+
+MADICES 2 is sponsored by the following organisations:
+
+export let sponsors = [
+  {
+    name: "CECAM",
+    link: "https://www.cecam.org/",
+    img: "https://www.cecam.org/themes/cecam/assets/images/logo.png",
+  },
+  {
+    name: "PREMISE",
+    link: "https://ord-premise.github.io",
+    img: "https://ord-premise.github.io/assets/img/logos/PREMISE-logo.svg",
+  },
+  {
+    name: "PSI",
+    link: "https://www.psi.ch",
+    img: "https://www.psi.ch/themes/custom/design/psi.svg",
+  },
+  {
+    name: "Empa",
+    link: "https://www.empa.ch",
+    img: "https://www.empa.ch/image/company_logo?img_id=0&t=1712376234155",
+  },
+  {
+    name: "ETHz",
+    link: "https://www.ethz.ch",
+    img: "https://ethz.ch/etc/designs/ethz/img/header/ethz_logo_black.svg",
+  },
+];
+
+<div className="container">
+  <div className="row">
+    {sponsors
+      .map((props, idx) => (
+        <Sponsor key={idx} {...props} />
+      ))}
+  </div>
+</div>

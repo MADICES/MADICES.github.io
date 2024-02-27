@@ -82,6 +82,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               position: "left",
             },
             {
+              label: "Sponsors",
+              to: "docs/sponsors",
+              position: "left",
+            },
+            {
               type: "dropdown",
               label: "Resources",
               position: "left",
