@@ -13,7 +13,7 @@ function Home() {
       >
       <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
-          <img style={{backgroundColor: 'white', borderRadius: "5px", padding: "10px", paddingLeft: "25px", paddingRight: "25px"}} className="homepage-img" src="img/svg/c_no_bg.svg"/>
+          <img style={{backgroundColor: 'none', borderRadius: "5px", padding: "10px", paddingLeft: "25px", paddingRight: "25px"}} className="homepage-img" src="img/png/madiices.png"/>
           <h1 className="hero__title">CECAM workshop April 22-25 2024</h1>
           <h2><a href="https://www.zib.de/">Zuse Institute Berlin</a></h2>
         </div>
