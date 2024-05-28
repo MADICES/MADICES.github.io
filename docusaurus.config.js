@@ -102,7 +102,7 @@ const lightCodeTheme = themes.github;
         },
         colorMode: {
           defaultMode: "light",
-          disableSwitch: false,
+          disableSwitch: true,
           respectPrefersColorScheme: false,
         },
         footer: {
