@@ -1,8 +1,16 @@
 import React from "react";
 import parse from "html-react-parser";
-import classNames from 'classnames';
+import classNames from "classnames";
 
-export function Card({ name, link, img, organization, imgcr, talkTitle, className }) {
+export function Card({
+  name,
+  link,
+  img,
+  organization,
+  imgcr,
+  talkTitle,
+  className,
+}) {
   /* Create Card with name and image */
   let imagecredit = "";
   if (imgcr) {
@@ -15,13 +23,22 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
   const cardClasses = classNames("col-12 col-sm-4", className);
 
   return (
-    <div className={cardClasses} style={{width: "320px"}}>
+    <div className={cardClasses} style={{ width: "320px" }}>
       <div className="card">
         <a href={link}>
-          <h3 class="card-name" style={{ width: "300px"}} >{name}</h3>
+          <h3 style={{ width: "300px" }}>{name}</h3>
         </a>
-        <h4 class="card-org" style={{ width: "300px", height: "2.5em" }}>{organization}</h4>
-        <h4 class="card-talk-title" style={{ width: "300px", height: talkT.length > 0 ? "3.5em" : "0em", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <h4 style={{ width: "300px", height: "2.5em" }}>{organization}</h4>
+        <h4
+          style={{
+            width: "300px",
+            height: talkT.length > 0 ? "3.5em" : "0em",
+            fontWeight: "normal",
+            fontStyle: "italic",
+          }}
+        >
+          {talkT}
+        </h4>
         <div className="card-image">
           <div
             className="thumb"
@@ -31,13 +48,25 @@ export function Card({ name, link, img, organization, imgcr, talkTitle, classNam
             {" "}
           </div>
         </div>
-        {<div style={{ color: ":#808080", fontSize: ".3em", width: "300px"  }}>{imagecredit}</div>}
+        {
+          <div style={{ color: ":#808080", fontSize: ".3em", width: "300px" }}>
+            {imagecredit}
+          </div>
+        }
       </div>
     </div>
   );
 }
 
-export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, className }) {
+export function KeynoteCard({
+  name,
+  link,
+  img,
+  organization,
+  imgcr,
+  talkTitle,
+  className,
+}) {
   /* Create Card with name and image */
   let imagecredit = "";
   if (imgcr) {
@@ -50,13 +79,33 @@ export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, c
   const cardClasses = classNames("col-12 col-sm-4", className);
 
   return (
-    <div className={cardClasses} style={{width: "80%", textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
+    <div
+      className={cardClasses}
+      style={{
+        width: "80%",
+        textAlign: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+    >
       <div className="card">
         <a href={link}>
-          <h3 style={{ fontSize: "1.5em", textAlign: "center" }} >{name}</h3>
+          <h3 style={{ fontSize: "1.5em", textAlign: "center" }}>{name}</h3>
         </a>
-        <h4 style={{ fontSize: "1.5em", height: "2.5em", textAlign: "center" }}>{organization}</h4>
-        <h4 style={{ fontSize: "1.5em", height: "3.5em", textAlign: "center", fontWeight: "normal", fontStyle: "italic" }}>{talkT}</h4>
+        <h4 style={{ fontSize: "1.5em", height: "2.5em", textAlign: "center" }}>
+          {organization}
+        </h4>
+        <h4
+          style={{
+            fontSize: "1.5em",
+            height: "3.5em",
+            textAlign: "center",
+            fontWeight: "normal",
+            fontStyle: "italic",
+          }}
+        >
+          {talkT}
+        </h4>
         <div className="card-image">
           <div
             className="thumb"
@@ -66,7 +115,11 @@ export function KeynoteCard({ name, link, img, organization, imgcr, talkTitle, c
             {" "}
           </div>
         </div>
-        {<div style={{ color: ":#808080", fontSize: ".3em", width: "300px"  }}>{imagecredit}</div>}
+        {
+          <div style={{ color: ":#808080", fontSize: ".3em", width: "300px" }}>
+            {imagecredit}
+          </div>
+        }
       </div>
     </div>
   );

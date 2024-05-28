@@ -1,0 +1,107 @@
+---
+title: Organizers
+sidebar_label: Organizers
+---
+
+import { Card } from "react-bootstrap";
+
+## Core team
+
+export let organizers = [
+  {
+    name: "Kevin Maik Jablonka",
+    link: "https://www.chemgeo.uni-jena.de/en/jablonkagroup",
+    img: "https://www.chemgeo.uni-jena.de/chegemedia/iomc/jablonka-group/portrait-kmj.webp?height=1075&width=1000",
+    organization: "EPFL",
+  },
+  {
+    name: "Matthew Evans",
+    link: "https://ml-evs.science/",
+    img: "https://ml-evs.science/assets/me_round.jpeg",
+    organization: "UCLouvain",
+  },
+  {
+    name: "Shyam Dwaraknath",
+    link: "https://www.linkedin.com/in/shyam-dwaraknath/",
+    img: "https://media.licdn.com/dms/image/C5603AQF2cntaOXCpgg/profile-displayphoto-shrink_200_200/0/1640149718821?e=1722470400&v=beta&t=pfoyABgzVh9uc_v7zckyNHTXmvprCKohZUnZWA3MPto",
+    organization: "Luxembourg Institute of Science and Technology",
+  },
+  {
+    name: "Sebastiaan Huber",
+    link: "http://sphuber.net/",
+    img: "https://www.nccr-catalysis.ch/site/assets/files/1080/sphuber_portrait_nobg-removebg_grey-1.500x500.png",
+    organization: "NCCR Catalysis",
+  },
+  {
+    name: "Carlo Pignedoli",
+    link: "https://www.empa.ch/web/s205/carlo-pignedoli",
+    img: "https://nccr-marvel.ch/_Resources/Persistent/160f316c56db3a20424f8fa1679b3373535a4ab2/CarloPignedoli-184x232.jpg",
+    organization: "EMPA",
+  },
+  {
+    name: "Stefan Kuhn",
+    link: "https://www.linkedin.com/in/stefan-kuhn-756bb74/?originalSubdomain=uk",
+    img: "/img/speakers/stefan.png",
+    organization: "De Montfort University",
+  },
+];
+
+export let facilitators = [
+  {
+    name: "Aude Faillétaz",
+    organization: "EPFL CECAM",
+    link: "https://people.epfl.ch/aude.failletaz",
+    img: "https://people.epfl.ch/private/common/photos/links/320055.jpg?ts=1643128863",
+  },
+];
+
+<div className="container">
+  <div className="row">
+    {organizers
+      .sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      })
+      .map((props, idx) => (
+        <div className="col-sm-6 col-xxl-4 mb-4">
+          <Card className="h-100 p-0">
+            <Card.Img variant="top" src={props.img} />
+            <Card.Body>
+              <Card.Title>
+                <a href={props.link}>{props.name}</a>
+              </Card.Title>
+              <Card.Text>{props.organization}</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
+  </div>
+</div>
+
+## Facilitators
+
+<div className="container">
+  <div className="row">
+    {facilitators
+      .sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      })
+      .map((props, idx) => (
+        <div className="col-sm-6 col-xxl-4 mb-4">
+          <Card className="h-100 p-0">
+            <Card.Img variant="top" src={props.img} />
+            <Card.Body>
+              <Card.Title>
+                <a href={props.link}>{props.name}</a>
+              </Card.Title>
+              <Card.Text>{props.organization}</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
+  </div>
+</div>
+
+## Scientific advisory board
+
+- [Nicola Marzari](http://theossrv1.epfl.ch/Main/Contact)
+- [Berend Smit](https://www.epfl.ch/labs/lsmo/smit/)

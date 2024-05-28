@@ -1,9 +1,10 @@
 ---
 title: Speakers
+sidebar_id: speakers
 sidebar_label: Speakers
 ---
 
-import { KeynoteCard, Card } from "./components.js";
+import { Card } from "react-bootstrap";
 
 export const keynote = [
   {
@@ -20,7 +21,7 @@ export const speakers = [
     link: "https://ch.linkedin.com/in/lpatiny",
     img: "https://www.zakodium.com/team/l.patiny.jpg",
     organization: "EPFL, Zakodium, cheminfo",
-    talkTitle: "Open-source JavaScript libraries for chemical data management"
+    talkTitle: "Open-source JavaScript libraries for chemical data management",
   },
   {
     name: "Peter Murray-Rust",
@@ -41,7 +42,7 @@ export const speakers = [
   {
     name: "Bob Hanson",
     link: "http://www.stolaf.edu/people/hansonr",
-    img: "https://www.stolaf.edu/stofaces/face.cfm?username=hansonr&v=20F2DC5&fullsize",
+    img: "https://i0.wp.com/wp.stolaf.edu/wp-content/uploads/2013/04/HansonBob250x300.jpg?ssl=1",
     talkTitle:
       "Progress in the development of an IUPAC FAIR Data model for spectroscopic data.",
     organization: "St. Olaf College ",
@@ -59,7 +60,7 @@ export const speakers = [
   {
     name: "Eibar Flores",
     link: "https://orbit.dtu.dk/en/persons/eibar-flores",
-    img: "https://orbit.dtu.dk/files-asset/246452810/158035_71d371a4.jpg",
+    img: "https://www.sintef.no/contentassets/5311ce90dab946f5bffd0c2811c88a9f/eibar.flores.cedeno-sintef.no.jpg",
     talkTitle: "Leveraging digital tools to promote research standards",
     organization: "DTU, BIG-MAP",
   },
@@ -73,9 +74,10 @@ export const speakers = [
   {
     name: "Michael Selzer",
     link: "http://www.iam.kit.edu/cms/",
-    talkTitle: "Kadi4Mat : research data infrastructure for material science and beyond",
+    talkTitle:
+      "Kadi4Mat : research data infrastructure for material science and beyond",
     organization: "Karlsruher Institut für Technologie (KIT)",
-    img: "https://www.iam.kit.edu/cms/img/content/alt/selzer-michael.jpg",
+    img: "https://www.iam.kit.edu/mms/img/content/Alt/selzer-michael.jpg",
   },
   {
     name: "Ian Bruno",
@@ -84,10 +86,10 @@ export const speakers = [
     img: "https://www.stm-assoc.org/wp-content/uploads/IanB2.jpg",
     organization: "CCDC, IUPAC",
   },
-    {
+  {
     name: "Burkhard Schäfer",
     link: "https://www.linkedin.com/in/burkhardschaefer/?locale=de_DE",
-    img: "img/speakers/bs.jpeg",
+    img: "https://media.licdn.com/dms/image/C4D03AQE9SVHr29FlpA/profile-displayphoto-shrink_800_800/0/1516238074445?e=1722470400&v=beta&t=olkCd1LP8OUJwJV5RU_IQeK4Mmme4dDzgfZ1IMN71vE",
     talkTitle: "Data Exchange in the Laboratory of the Future",
     organization: "BSSN Software",
   },
@@ -110,7 +112,7 @@ export const speakers = [
     name: "Alex Hexemer",
     link: "https://als.lbl.gov/people/alex-hexemer/",
     organization: "Advanced Light Source, LBL",
-    img: "http://www.helmholtz-berlin.de/media/media/spezial/events/sas/2015/alexander_hexemer_small.jpg",
+    img: "https://media.licdn.com/dms/image/C5603AQFaESKmjY04CQ/profile-displayphoto-shrink_200_200/0/1625863627698?e=1722470400&v=beta&t=ucDC5qOrjcmQKgvqceLQhwvsjPqQoL2Z1SJUySliMVY",
     talkTitle: "MLExchange, bringing machine learning to the beamline",
   },
   {
@@ -118,14 +120,14 @@ export const speakers = [
     link: "https://biosciences.lbl.gov/profiles/chris-mungall/",
     talkTitle:
       "LinkML: a developer-friendly semantic data modeling framework, with applications in the chemical sciences",
-    img: "https://bids.berkeley.edu/sites/default/files/styles/300x300/public/chris_mungall_-_mungall-headshot.jpg?itok=I4PV71RP",
+    img: "https://biosciences.lbl.gov/wp-content/uploads/2015/11/Chris-Mungal-2022-square-300x300.jpeg",
     organization: "Berkeley Lab",
   },
   {
     name: "Nicolas Carpi",
     link: "https://www.deltablot.com/about/",
     organization: "Deltablot, eLabFTW",
-    img: "https://science.curie.fr/wp-content/uploads/2016/03/nicolas-carpi-3.jpg",
+    img: "https://i1.rgstatic.net/ii/profile.image/272279095476226-1441927803644_Q512/Nicolas-Carpi.jpg",
   },
   {
     name: "Giovanni Pizzi",
@@ -146,7 +148,8 @@ export const speakers = [
     name: "Chandu Nainala & Philip Strömert",
     link: "https://nfdi4chem.de/",
     organization: "NFDI4Chem, University of Jena (CN), TIB Leibniz (PS)",
-    talkTitle: "NFDI4Chem Terminology Service: Enabling semantic research data interoperability, discovery and exploitation in chemistry",
+    talkTitle:
+      "NFDI4Chem Terminology Service: Enabling semantic research data interoperability, discovery and exploitation in chemistry",
     img: "/img/speakers/chandu_philip.png",
   },
   {
@@ -174,7 +177,8 @@ export const speakers = [
     name: "David Prendergast",
     organization: "Lawrence Berkeley National Laboratory",
     link: "https://foundry.lbl.gov/about/staff/david-prendergast/",
-    talkTitle: "Python Notebooks for X-ray Spectroscopy Simulation and Analysis",
+    talkTitle:
+      "Python Notebooks for X-ray Spectroscopy Simulation and Analysis",
     img: "https://foundry.lbl.gov/wp-content/uploads/sites/2/2019/08/Prendergast_2.jpg",
   },
 ];
@@ -182,12 +186,21 @@ export const speakers = [
 ## Keynote
 
 <div className="container">
-<div className="row">
-
-<KeynoteCard key={0} {...keynote[0]} />
-
-</div>
-
+  <div className="row">
+    {keynote.map((props, idx) => (
+      <div className="col-12">
+        <Card className="h-100 p-0">
+          <Card.Img variant="top" src={props.img} />
+          <Card.Body>
+            <Card.Title>
+              <a href={props.link}>{props.name}</a>
+            </Card.Title>
+            <Card.Text>{props.organization}</Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
+    ))}
+  </div>
 </div>
 
 ## Speakers
@@ -199,7 +212,18 @@ export const speakers = [
         return a.name.localeCompare(b.name);
       })
       .map((props, idx) => (
-        <Card key={idx} {...props} />
+        <div className="col-sm-6 col-xxl-4 mb-4">
+          <Card className="h-100 p-0">
+            <Card.Img variant="top" src={props.img} />
+            <Card.Body>
+              <Card.Title>
+                <a href={props.link}>{props.name}</a>
+              </Card.Title>
+              <Card.Text>{props.organization}</Card.Text>
+              <Card.Text>{props.talkTitle}</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
       ))}
   </div>
 </div>

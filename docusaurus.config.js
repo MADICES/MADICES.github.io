@@ -1,14 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const lightCodeTheme = require("prism-react-renderer/themes/github");
+import { themes } from "prism-react-renderer";
+
+const darkCodeTheme = themes.dracula;
+const lightCodeTheme = themes.github;
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
   module.exports = {
-    title: "MADICES 2024",
+    title: "MADICES",
     tagline:
-      "Machine actionable data for chemical sciences:  Bridging experiments, simulations, and machine learning for spectral data",
+      "Machine actionable data for chemical sciences: Bridging experiments, simulations, and machine learning",
     url: "https://madices.github.io",
     baseUrl: "/",
     favicon: "img/favicon.ico",
@@ -23,7 +25,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
         ({
           docs: {
             path: "docs",
-            sidebarPath: "sidebars.js",
+            sidebarPath: "./sidebars.js",
             editUrl: "https://github.com/madices/madices.github.io/edit/main/",
             versions: {
               current: {
@@ -52,7 +54,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
         },
       ],
-      ["docusaurus2-dotenv", {systemvars: true}],
+      // ["docusaurus2-dotenv", {systemvars: true}],
     ],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -67,24 +69,19 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           items: [
             // left
             {
-              label: "Workshop objectives",
-              to: "docs/objectives",
+              type: "dropdown",
+              label: "Workshops",
               position: "left",
-            },
-            {
-              label: "Program",
-              to: "docs/program",
-              position: "left",
-            },
-            {
-              label: "Organizers",
-              to: "docs/organizers",
-              position: "left",
-            },
-            {
-              label: "Sponsors",
-              to: "docs/sponsors",
-              position: "left",
+              items: [
+                {
+                  label: "MADICES (virtual)",
+                  to: "docs/2022",
+                },
+                {
+                  label: "MADIICES (Berlin)",
+                  to: "docs/2024",
+                },
+              ],
             },
             {
               type: "dropdown",
@@ -101,23 +98,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                 },
               ],
             },
-             {
-               label: "Discussions",
-               to: "https://github.com/MADICES/MADICES-2024/discussions",
-               disabled: true,
-               position: "left",
-             },
-             {
-               label: "Registration",
-               to: "https://www.cecam.org/workshop-details/1321",
-               disabled: true,
-               position: "left",
-             },
-            {
-                label: "MADICES 2022",
-                to: "2022",
-                position: "right",
-            },
           ],
         },
         colorMode: {
@@ -125,10 +105,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           disableSwitch: false,
           respectPrefersColorScheme: false,
         },
-        // announcementBar: {
-        //   content:
-        //     '⭐️ Register for free on the <a target="_blank" rel="noopener noreferrer" href="https://www.cecam.org/workshop-details/1165">CECAM website</a>! ⭐️',
-        // },
         footer: {
           links: [
             {
@@ -153,11 +129,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               items: [{ label: "Email", to: "https://mailhide.io/e/TurK9QvA" }],
             },
           ],
-          logo: {
-            alt: "MADICES",
-            src: "img/svg/c_no_bg.svg",
-            srcDark: "img/svg/w_no_bg.svg",
-          },
           copyright: "MADICES Organization Team",
         },
         image: "img/svg/c_no_bg.svg",
