@@ -74,11 +74,11 @@ const lightCodeTheme = themes.github;
               position: "left",
               items: [
                 {
-                  label: "2022 (virtual)",
+                  label: "MADICES (virtual)",
                   to: "docs/2022",
                 },
                 {
-                  label: "2024 (Berlin)",
+                  label: "MADIICES (Berlin)",
                   to: "docs/2024",
                 },
               ],

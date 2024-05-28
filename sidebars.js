@@ -30,6 +30,11 @@ module.exports = {
       id: "2022/program",
       label: "Program",
     },
+    // {
+    //   type: "doc",
+    //   id: "2022/report",
+    //   label: "Report",
+    // },
     {
       type: "link",
       label: "Discussions",
@@ -61,6 +66,11 @@ module.exports = {
       type: "doc",
       id: "2024/program",
       label: "Program",
+    },
+    {
+      type: "doc",
+      id: "2024/report",
+      label: "Report",
     },
     {
       type: "link",

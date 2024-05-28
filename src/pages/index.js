@@ -28,11 +28,11 @@ function Home() {
                 <Card>
                   <Card.Body>
                     <Card.Title>
-                      <a href="/docs/2022">2022 virtual workshop</a>
+                      <a href="/docs/2022">MADICES 2022</a>
                     </Card.Title>
                     <Card.Text>
                       The first MADICES workshop was held virtually in February
-                      2022. Click here to learn more about the workshop.
+                      2022.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -41,11 +41,11 @@ function Home() {
                 <Card>
                   <Card.Body>
                     <Card.Title>
-                      <a href="/docs/2024">2024 workshop in Berlin</a>
+                      <a href="/docs/2024">MADIICES 2024</a>
                     </Card.Title>
                     <Card.Text>
                       The second MADICES workshop was held in Berlin in April
-                      2024. Click here to learn more about the workshop.
+                      2024.
                     </Card.Text>
                   </Card.Body>
                 </Card>
