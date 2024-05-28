@@ -24,7 +24,7 @@ function Home() {
         <section className="features">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-md-6 mb-3">
                 <Card>
                   <Card.Body>
                     <Card.Title>
@@ -37,7 +37,7 @@ function Home() {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col-6">
+              <div className="col-md-6 mb-3">
                 <Card>
                   <Card.Body>
                     <Card.Title>
