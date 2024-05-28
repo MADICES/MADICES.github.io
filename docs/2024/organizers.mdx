@@ -1,11 +1,11 @@
 ---
 title: Organizers
+sidebar_id: organizers
 sidebar_label: Organizers
 ---
 
-import { Card } from "./components.js";
-
-## Core Organization Team
+{/* // import { Card } from "../components.js"; */}
+import { Card } from "react-bootstrap";
 
 export let organizers = [
   {
@@ -13,37 +13,34 @@ export let organizers = [
     link: "https://www.chemgeo.uni-jena.de/en/jablonkagroup",
     img: "https://www.chemgeo.uni-jena.de/chegemedia/iomc/jablonka-group/portrait-kmj.webp?height=1075&width=1000",
     organization: "EPFL",
-    talkTitle: "",
   },
   {
     name: "Matthew Evans",
     link: "https://ml-evs.science/",
     img: "https://ml-evs.science/assets/me_round.jpeg",
     organization: "UCLouvain",
-    talkTitle: "",
   },
   {
     name: "Caterina Barillari",
     link: "https://ethz.ch/staffnet/en/organisation/departments/it-services/people/person-detail.MTg1NzU4.TGlzdC8zODgsLTg1MzU3NzMxNA==.html",
     img: "https://openbis.ch/wp-content/uploads/2020/07/ETH_Inside%EF%80%A7out_170227.jpg",
     organization: "ETH Zürich",
-    talkTitle: "",
   },
   {
     name: "Edan Bainglass",
     link: "https://www.psi.ch/en/lms/people/edan-bainglass",
     img: "https://avatars.githubusercontent.com/u/45081142?v=4",
     organization: "Paul Scherrer Institut",
-    talkTitle: "",
   },
   {
     name: "Peter Kraus",
     link: "https://www.tu.berlin/concat/ueber-uns/peter-kraus",
     img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.rgstatic.net%2Fii%2Fprofile.image%2F509591587115009-1498507510648_Q512%2FPeter_Kraus4.jpg&f=1&nofb=1&ipt=f73b1a7c7f60b5dd97513554626316e27287dfd9a50b8cee72ed9afe15731d2d&ipo=images",
     organization: "Technische Universität Berlin",
-    talkTitle: "",
   },
 ];
+
+## Core team
 
 <div className="container">
   <div className="row">
@@ -52,17 +49,17 @@ export let organizers = [
         return a.name.localeCompare(b.name);
       })
       .map((props, idx) => (
-        <Card key={idx} {...props} />
+        <div className="col-sm-6 col-xxl-4 mb-4">
+          <Card className="h-100 p-0">
+            <Card.Img variant="top" src={props.img} />
+            <Card.Body>
+              <Card.Title>
+                <a href={props.link}>{props.name}</a>
+              </Card.Title>
+              <Card.Text>{props.organization}</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
       ))}
   </div>
 </div>
-
-<!--
-
-## Support
-
-Kindly supported by [CECAM](https://www.cecam.org), BIG-MAP and the [NCCR Marvel](https://nccr-marvel.ch)
-
- <img height='50' src="https://www.cecam.org/themes/cecam/assets/images/logo.png"/> <span> </span>  <img height='70' src="https://nccr-marvel.ch/_Resources/Static/Packages/Marvel.Website/Images/marvel-logo-text.svg?bust=ad32c11f"/>
-
--->
