@@ -90,3 +90,6 @@ tags
 build/
 .env
 # End of https://www.toptal.com/developers/gitignore/api/react,macos,visualstudiocode,vim
+
+# Yarn
+.yarn

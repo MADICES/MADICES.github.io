@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const lightCodeTheme = require("prism-react-renderer/themes/github");
+import { themes } from "prism-react-renderer";
+
+const darkCodeTheme = themes.dracula;
+const lightCodeTheme = themes.github;
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -52,7 +54,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
           documents: ["glossary.md", "awesome_interoperability.md"], // the file names to download
         },
       ],
-      ["docusaurus2-dotenv", {systemvars: true}],
+      // ["docusaurus2-dotenv", {systemvars: true}],
     ],
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -101,22 +103,22 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
                 },
               ],
             },
-             {
-               label: "Discussions",
-               to: "https://github.com/MADICES/MADICES-2024/discussions",
-               disabled: true,
-               position: "left",
-             },
-             {
-               label: "Registration",
-               to: "https://www.cecam.org/workshop-details/1321",
-               disabled: true,
-               position: "left",
-             },
             {
-                label: "MADICES 2022",
-                to: "2022",
-                position: "right",
+              label: "Discussions",
+              to: "https://github.com/MADICES/MADICES-2024/discussions",
+              disabled: true,
+              position: "left",
+            },
+            {
+              label: "Registration",
+              to: "https://www.cecam.org/workshop-details/1321",
+              disabled: true,
+              position: "left",
+            },
+            {
+              label: "MADICES 2022",
+              to: "2022",
+              position: "right",
             },
           ],
         },
@@ -153,11 +155,11 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
               items: [{ label: "Email", to: "https://mailhide.io/e/TurK9QvA" }],
             },
           ],
-          logo: {
-            alt: "MADICES",
-            src: "img/svg/c_no_bg.svg",
-            srcDark: "img/svg/w_no_bg.svg",
-          },
+          // logo: {
+          //   alt: "MADICES",
+          //   src: "img/svg/c_no_bg.svg",
+          //   srcDark: "img/svg/w_no_bg.svg",
+          // },
           copyright: "MADICES Organization Team",
         },
         image: "img/svg/c_no_bg.svg",
