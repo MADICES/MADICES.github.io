@@ -17,11 +17,11 @@ jobs:
           submodules: recursive
       - uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 21.x
       - name: Install dependencies
         run: |
           npm i -g yarn
-          yarn install --frozen-lockfile
+          yarn install
       - name: Build
         env:
           CALENDAR_API_KEY: ${{ secrets.CALENDAR_API_KEY }}
