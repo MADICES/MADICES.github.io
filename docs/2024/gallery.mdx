@@ -1,0 +1,57 @@
+---
+title: Gallery
+sidebar_id: gallery
+sidebar_label: Gallery
+---
+
+import { Carousel, Image } from "react-bootstrap";
+
+export let gallery = [
+    '2024-04-22-13h10m45.jpg',
+    '2024-04-22-14h02m46.jpg',
+    '2024-04-22-14h04m18.jpg',
+    '2024-04-22-14h14m56.jpg',
+    '2024-04-22-14h28m39.jpg',
+    '2024-04-22-14h33m20.jpg',
+    '2024-04-22-14h56m01.jpg',
+    '2024-04-22-15h33m41.jpg',
+    '2024-04-23-08h51m43.jpg',
+    '2024-04-23-11h54m45.jpg',
+    '2024-04-23-11h54m47.jpg',
+    '2024-04-23-11h58m31.jpg',
+    '2024-04-23-11h58m37.jpg',
+    '2024-04-23-12h00m48.jpg',
+    '2024-04-23-12h01m59.jpg',
+    '2024-04-23-12h02m12.jpg',
+    '2024-04-24-11h16m45.jpg',
+    '2024-04-24-13h23m25.jpg',
+    '2024-04-24-15h22m44.jpg',
+    '2024-04-24-16h35m13.jpg',
+    '2024-04-24-16h43m56.jpg',
+    '2024-04-24-16h44m13.jpg',
+    '2024-04-24-16h44m16.jpg',
+    '2024-04-24-18h08m53.jpg',
+    '2024-04-24-18h51m16.jpg',
+    '2024-04-24-19h57m00.jpg',
+    '2024-04-25-10h35m38.jpg',
+    '2024-04-25-10h40m05.jpg',
+    '2024-04-25-10h56m49.jpg',
+    '2024-04-25-10h58m56.jpg',
+    '2024-04-25-10h59m16.jpg',
+    '2024-04-25-11h03m01.jpg',
+    '2024-04-25-11h03m29.jpg',
+    '2024-04-25-11h05m18.jpg',
+];
+
+
+<div className="container">
+  <Carousel>
+  {gallery
+    .map((prop, idx) => (
+      <Carousel.Item>
+        <Image src={'/2024/photo/' + prop} />
+      </Carousel.Item>
+    ))
+  }
+  </Carousel>
+</div>

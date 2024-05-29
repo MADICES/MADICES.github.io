@@ -77,5 +77,10 @@ module.exports = {
       label: "Discussions",
       href: "https://github.com/MADICES/MADICES-2024/discussions",
     },
+    {
+      type: "doc",
+      id: "2024/gallery",
+      label: "Gallery",
+    },
   ],
 };
