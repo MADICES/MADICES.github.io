@@ -147,7 +147,7 @@ body {
 }
 
 .sponsor-img {
-  margin: 2em;
+  padding: 2em;
   width: 25rem;
 }
 
@@ -180,14 +180,14 @@ a {
 
 .btn-brand {
   color: white;
-  background-color: #6639a6;
-  border-color: #6639a6;
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
 }
 
 .btn-brand:hover {
   color: var(--bs-body-color);
   background-color: white;
-  border-color: #6639a6;
+  border-color: var(--ifm-color-primary);
 }
 
 .acknowledgements {
@@ -198,4 +198,23 @@ a {
 
 .footer__links {
   text-align: center;
+}
+
+.pagination-nav__link {
+  width: max-content;
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.pagination-nav__link:hover {
+  background-color: white;
+}
+
+.pagination-nav__link--next {
+  margin-left: auto;
+}
+
+.pagination-nav__sublabel {
+  display: none;
 }
