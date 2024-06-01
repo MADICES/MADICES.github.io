@@ -69,6 +69,11 @@ module.exports = {
     },
     {
       type: "doc",
+      id: "2024/gallery",
+      label: "Gallery",
+    },
+    {
+      type: "doc",
       id: "2024/report",
       label: "Scientific report",
     },
