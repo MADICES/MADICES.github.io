@@ -1,8 +1,7 @@
 import React from "react";
-import Layout from "@theme/Layout";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-
 import { Card } from "react-bootstrap";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
 
 function Home() {
   const context = useDocusaurusContext();
@@ -25,30 +24,24 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-md-6 mb-3">
-                <Card>
-                  <Card.Body>
-                    <Card.Title>
-                      <a href="/docs/2022">MADICES 2022</a>
-                    </Card.Title>
-                    <Card.Text>
-                      The first MADICES workshop was held virtually in February
-                      2022.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <a href="/docs/2022">
+                  <Card className="btn btn-brand">
+                    <Card.Body>
+                      <Card.Title>MADICES 2022</Card.Title>
+                      <Card.Text>February 7-9, 2022 (virtual)</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </a>
               </div>
               <div className="col-md-6 mb-3">
-                <Card>
-                  <Card.Body>
-                    <Card.Title>
-                      <a href="/docs/2024">MADIICES 2024</a>
-                    </Card.Title>
-                    <Card.Text>
-                      The second MADICES workshop was held in Berlin in April
-                      2024.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <a href="/docs/2024">
+                  <Card className="btn btn-brand">
+                    <Card.Body>
+                      <Card.Title>MADIICES 2024</Card.Title>
+                      <Card.Text>April 22-25, 2024 (Berlin)</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </a>
               </div>
             </div>
           </div>
@@ -56,10 +49,9 @@ function Home() {
         <hr />
         <section>
           <div className="container">
-            <h2>Acknowledgements</h2>
-            <p>
-              MADICES is partly supported by the Open Research Data Program of
-              the ETH Board through the{" "}
+            <p className="acknowledgements">
+              MADICES is supported by the Open Research Data Program of the ETH
+              Board through the{" "}
               <a href="https://ord-premise.org" target="_blank">
                 PREMISE Establish project
               </a>
