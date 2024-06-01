@@ -33,7 +33,7 @@ module.exports = {
     // {
     //   type: "doc",
     //   id: "2022/report",
-    //   label: "Report",
+    //   label: "Scientific report",
     // },
     {
       type: "link",
@@ -70,7 +70,7 @@ module.exports = {
     {
       type: "doc",
       id: "2024/report",
-      label: "Report",
+      label: "Scientific report",
     },
     {
       type: "link",
