@@ -12,7 +12,7 @@ function Home() {
         <div className="container">
           <img className="homepage-img" src="img/svg/c_no_bg.svg" />
           <h1 className="hero__title">
-            Machine-Actionable Data Interoperability for Chemical Sciences
+            Machine-Actionable Data Interoperability for the Chemical Sciences
           </h1>
           <h2 className="hero__subtitle">
             Bridging experiments, simulations, and machine learning
