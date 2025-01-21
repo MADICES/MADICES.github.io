@@ -30,11 +30,11 @@ module.exports = {
       id: "2022/program",
       label: "Program",
     },
-    // {
-    //   type: "doc",
-    //   id: "2022/report",
-    //   label: "Scientific report",
-    // },
+    {
+      type: "doc",
+      id: "2022/report",
+      label: "Scientific report",
+    },
     {
       type: "link",
       label: "Discussions",
