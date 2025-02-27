@@ -78,7 +78,7 @@ const lightCodeTheme = themes.github;
                   to: "docs/2022",
                 },
                 {
-                  label: "MADIICES 2024 (Berlin)",
+                  label: "MADICES 2024 (Berlin)",
                   to: "docs/2024",
                 },
               ],

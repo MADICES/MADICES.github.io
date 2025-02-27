@@ -37,7 +37,7 @@ function Home() {
                 <a href="/docs/2024">
                   <Card className="btn btn-brand">
                     <Card.Body>
-                      <Card.Title>MADIICES 2024</Card.Title>
+                      <Card.Title>MADICES 2024</Card.Title>
                       <Card.Text>April 22-25, 2024 (Berlin)</Card.Text>
                     </Card.Body>
                   </Card>
