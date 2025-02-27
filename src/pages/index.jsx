@@ -23,7 +23,7 @@ function Home() {
         <section className="features">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 mb-3">
+              <div className="col-md-4 mb-2">
                 <a href="/docs/2022">
                   <Card className="btn btn-brand">
                     <Card.Body>
@@ -33,12 +33,22 @@ function Home() {
                   </Card>
                 </a>
               </div>
-              <div className="col-md-6 mb-3">
+              <div className="col-md-4 mb-2">
                 <a href="/docs/2024">
                   <Card className="btn btn-brand">
                     <Card.Body>
                       <Card.Title>MADICES 2024</Card.Title>
                       <Card.Text>April 22-25, 2024 (Berlin)</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </a>
+              </div>
+              <div className="col-md-4 mb-2">
+                <a href="/docs/2025">
+                  <Card className="btn btn-brand">
+                    <Card.Body>
+                      <Card.Title>MADICES 2025</Card.Title>
+                      <Card.Text>October 20-24, 2025 (Switzerland)</Card.Text>
                     </Card.Body>
                   </Card>
                 </a>
