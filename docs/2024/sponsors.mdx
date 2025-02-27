@@ -20,7 +20,7 @@ export let sponsors = [
   {
     name: "PSI",
     link: "https://www.psi.ch",
-    img: "https://www.psi.ch/themes/custom/design/psi.svg",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTH82FMk7yk26-lNuUBsGL5qbM5vMWuu8nQ&s",
   },
   {
     name: "Empa",
@@ -52,10 +52,9 @@ export let sponsors = [
 ## Support
 
 <div className="container">
-  <div className="row">
-    {sponsors
-      .map((props, idx) => (
-        <Sponsor key={idx} {...props} />
-      ))}
+  <div className="row sponsor-box">
+    {sponsors.map((props, idx) => (
+      <Sponsor key={idx} {...props} />
+    ))}
   </div>
 </div>
