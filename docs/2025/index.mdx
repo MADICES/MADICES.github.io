@@ -1,0 +1,37 @@
+---
+title: MADICES 2025
+sidebar_label: About
+sidebar_id: about
+---
+
+## Overview
+
+The research community is increasingly recognizing [FAIR](https://www.go-fair.org/fair-principles/) data (Findable, Accessible, Interoperable, Reusable) as pivotal for the future, emphasizing the need to invest in making data easily accessible and usable by others. Central to achieving this is the role of metadata, which plays a crucial part in enabling searchability and discovery. Enhancing metadata to be machine-actionable improves interoperability and aids users in comprehending the context and significance of the data. Semantic metadata, which connects metadata concepts with ontological terms to provide contextualization beyond simple textual descriptions, is essential in this endeavor [1, 2].
+
+Acknowledging its significance, the scientific community has been developing various tools and standards to advance metadata practices. The [RO-Crate](https://www.researchobject.org/ro-crate/) specification provides a standard for packaging research data with machine-actionable metadata utilizing [JSON-LD](https://json-ld.org/). The schema.org initiative establishes community-driven schemas that encompass metadata concepts across different domains. Ontotext's [Refine tool](https://www.ontotext.com/products/ontotext-refine/) converts unstructured data into knowledge graphs, which are integral in the semantic annotation workflow.
+
+Despite these efforts, several challenges persist. Complexity remains a barrier as identifying pertinent data elements and aligning them with suitable ontologies can be labor-intensive [3]. Moreover, the ontology landscape is vast and varied, leading to confusion, with significant gaps existing in specialized subdisciplines [4-7]. In addition, domain expertise is often crucial for mapping data to domain-specific ontology terms accurately, compounded by ontological concepts sharing similar names but differing in semantic meanings [8,9].
+
+Moreover, there is a notable absence of user-friendly tools for robust and accurate semantic annotation and metadata generation. Addressing this complex issue requires further technological innovations [8,9]. Recent strides in AI/ML such as Large Language Model (LLM) systems show promise in accurately accomplishing semantic annotation tasks [10,11], suggesting potential avenues for integration into open science practices.
+
+Another critical challenge is achieving interoperability of FAIR data across diverse Research Data Management (RDM) platforms. In the context of the [PREMISE](https://ord-premise.org/) project under the ETH-Board’s ORD program, efforts are underway to explore interoperability between systems such as the [AiiDA](https://www.aiida.net/) workflow management system (WFMS) and the [openBIS](https://openbis.ch/) ELN/LIMS platform. However, such pairwise solutions often rely on bespoke APIs, which are cumbersome and costly to develop. A more scalable approach would require a platform-agnostic solution, enabling various platforms to seamlessly adopt general data interoperability standards via a unified API. Initiatives towards realizing such solutions were commenced at [MADICES 2](/docs/2024), with detailed progress accessible on the [MADICES GitHub repositories](https://github.com/MADICES/).
+
+In conclusion, while significant strides have been made towards embracing FAIR principles and improving metadata practices, substantial challenges remain. Addressing these challenges demands continued interdisciplinary collaboration and innovative use of emerging technologies to realize the full potential of FAIR data principles in modern research.
+
+### References
+
+1. S. Tiwari, F. Ortiz-Rodriguez and M. A. Jabbar, Semantic Models in IoT and eHealth Applications. 1-17 (2022)
+2. B. Bayerlein, et al. Materials & Design 237 112603 (2024)
+3. S. Kanza, N. Gibbins and J. G. Frey, J. Cheminform. 11 23 (2019)
+4. P. Strömert, et al., Pure and Applied Chemistry. 94(6) 605-622 (2022)
+5. A.S. Behr, H. Borgelt and N. Kockmann, J. Cheminform. 16(1) 16 (2024)
+6. L. M. Ghiringhelli, et al., Sci. Data 10 626 (2023)
+7. K. M. Jablonka, L. Patiny and B. Smit, Nat. Chem. 14 365–376 (2022)
+8. F. Löffler, et al., Proceedings of the Twelfth Language Resources and Evaluation Conference (2020)
+9. P. Kherwa, International Journal of Engineering Applied Sciences and Technology 6.12 217-219 (2022)
+10. S. Hoseini, et al., The Second International Workshop on Semantics in Dataspaces. (2024)
+11. T. A. Benedikt, et al., arXiv preprint arXiv:2403.15451 (2024)
+
+### Acknowledgements
+
+MADICES is partly supported by the Open Research Data Program of the [ETH Board](https://ethrat.ch/en/) through the [PREMISE Establish project](https://ord-premise.org/).
