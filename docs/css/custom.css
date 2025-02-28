@@ -146,6 +146,10 @@ body {
   margin-left: 7em;
 }
 
+.sponsor-box {
+  align-items: center;
+}
+
 .sponsor-img {
   padding: 2em;
   width: 25rem;
