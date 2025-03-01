@@ -147,6 +147,7 @@ body {
 }
 
 .sponsor-box {
+  justify-content: center;
   align-items: center;
 }
 
