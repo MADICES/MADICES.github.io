@@ -6,6 +6,11 @@ module.exports = {
       label: "About",
     },
     {
+      type: "link",
+      label: "CECAM",
+      href: "https://www.cecam.org/workshop-details/machine-actionable-data-interoperability-for-chemical-sciences-madices-bridging-experiments-simulations-and-machine-learning-for-spectral-data-1165",
+    },
+    {
       type: "doc",
       id: "2022/objectives",
       label: "Objectives",
@@ -48,6 +53,11 @@ module.exports = {
       label: "About",
     },
     {
+      type: "link",
+      label: "CECAM",
+      href: "https://www.cecam.org/workshop-details/machine-actionable-data-interoperability-for-the-chemical-sciences-madices-2-1321",
+    },
+    {
       type: "doc",
       id: "2024/objectives",
       label: "Objectives",
@@ -88,6 +98,11 @@ module.exports = {
       type: "doc",
       id: "2025/index",
       label: "About",
+    },
+    {
+      type: "link",
+      label: "Registration",
+      href: "https://www.cecam.org/workshop-details/madices-3-machine-actionable-data-interoperability-for-the-chemical-sciences-1450",
     },
     {
       type: "doc",
