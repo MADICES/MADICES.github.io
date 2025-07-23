@@ -28,10 +28,10 @@ export let organizers = [
       "University of Southampton and Physical Sciences Data Infrastructure (PSDI)",
   },
   {
-    name: "Simon Bekemeier",
-    link: "https://www.linkedin.com/in/simon-bekemeier-05399118a/?originalSubdomain=de",
-    img: "https://avatars.githubusercontent.com/u/38857177?v=4",
-    organization: "Bundesanstalt für Materialforschung und -prüfung (BAM)",
+    name: "Jörg Schaarschmidt",
+    link: "https://www.int.kit.edu/1632_5482.php",
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQH3UR0RmQO26w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688463847494?e=1756339200&v=beta&t=5VIp7QIefC23RDkKekBqyI0mWtd05OEfW3yykIC2rHc",
+    organization: "Karlsruhe Institute of Technology (KIT) and MaterialDigital",
   },
   {
     name: "Matthew Evans",
@@ -40,10 +40,10 @@ export let organizers = [
     organization: "UCLouvain",
   },
   {
-    name: "Sebastian Brückner",
-    link: "https://www.linkedin.com/in/sebastianbrueckner/?originalSubdomain=de",
-    img: "https://fair-di.eu/uploads/Personen/Brueckner_Sebastian.jpeg",
-    organization: "IKZ Berlin and HU Berlin",
+    name: "Joseph Rudzinski",
+    link: "https://www.linkedin.com/in/joseph-rudzinski/",
+    img: "https://media.licdn.com/dms/image/v2/C4D03AQFoDNTJ1ynleg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1610102346150?e=1756339200&v=beta&t=rSvxKruXB-3gU_GagR7TsFpKLZS6fRXhzypnxyZ2GoY",
+    organization: "Humboldt-Universität zu Berlin and FAIRmat",
   },
 ];
 
@@ -52,8 +52,10 @@ export let organizers = [
 <div className="container">
   <div className="row">
     {organizers
-      .sort(function (a, b) {
-        return a.name.localeCompare(b.name);
+      .sort((a, b) => {
+        const lastA = a.name.split(" ").slice(-1)[0].toLowerCase();
+        const lastB = b.name.split(" ").slice(-1)[0].toLowerCase();
+        return lastA.localeCompare(lastB);
       })
       .map((props, idx) => (
         <div className="col-sm-6 col-xxl-4 mb-4">
