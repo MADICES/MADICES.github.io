@@ -100,9 +100,21 @@ module.exports = {
       label: "About",
     },
     {
-      type: "link",
+      type: "category",
       label: "Registration",
-      href: "https://www.cecam.org/workshop-details/madices-3-machine-actionable-data-interoperability-for-the-chemical-sciences-1450",
+      collapsible: false,
+      items: [
+        {
+          type: "link",
+          label: "CECAM",
+          href: "https://www.cecam.org/workshop-details/madices-3-machine-actionable-data-interoperability-for-the-chemical-sciences-1450",
+        },
+        {
+          type: "link",
+          label: "Indico",
+          href: "https://indico.psi.ch/event/17805/registrations/",
+        },
+      ],
     },
     {
       type: "doc",
