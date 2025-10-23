@@ -115,10 +115,6 @@ const lightCodeTheme = themes.github;
               title: "Community",
               items: [
                 {
-                  label: "Discord",
-                  to: "https://discord.gg/r9kSbrRs9H",
-                },
-                {
                   label: "Code of Conduct",
                   to: "docs/coc",
                 },
