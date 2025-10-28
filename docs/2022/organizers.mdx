@@ -58,8 +58,10 @@ export let facilitators = [
 <div className="container">
   <div className="row">
     {organizers
-      .sort(function (a, b) {
-        return a.name.localeCompare(b.name);
+      .sort((a, b) => {
+        const lastA = a.name.split(" ").slice(-1)[0].toLowerCase();
+        const lastB = b.name.split(" ").slice(-1)[0].toLowerCase();
+        return lastA.localeCompare(lastB);
       })
       .map((props, idx) => (
         <div className="col-sm-6 col-xxl-4 mb-4">
@@ -82,8 +84,10 @@ export let facilitators = [
 <div className="container">
   <div className="row">
     {facilitators
-      .sort(function (a, b) {
-        return a.name.localeCompare(b.name);
+      .sort((a, b) => {
+        const lastA = a.name.split(" ").slice(-1)[0].toLowerCase();
+        const lastB = b.name.split(" ").slice(-1)[0].toLowerCase();
+        return lastA.localeCompare(lastB);
       })
       .map((props, idx) => (
         <div className="col-sm-6 col-xxl-4 mb-4">
