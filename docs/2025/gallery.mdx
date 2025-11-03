@@ -1,0 +1,64 @@
+---
+title: Gallery
+sidebar_id: gallery
+sidebar_label: Gallery
+---
+
+import { Carousel, Image } from "react-bootstrap";
+
+export const gallery = [
+  "picture_1.jpg",
+  "picture_2.jpg",
+  "picture_3.jpg",
+  "picture_4.jpg",
+  "picture_5.jpg",
+  "picture_6.jpg",
+  "picture_7.jpg",
+  "picture_8.jpg",
+  "picture_9.jpg",
+  "picture_10.jpg",
+  "picture_11.jpg",
+  "picture_12.jpg",
+  "picture_13.jpg",
+  "picture_14.jpg",
+  "picture_15.jpg",
+  "picture_16.jpg",
+  "picture_17.jpg",
+  "picture_18.jpg",
+  "picture_19.jpg",
+  "picture_20.jpg",
+  "picture_21.jpg",
+  "picture_22.jpg",
+  "picture_23.jpg",
+  "picture_24.jpg",
+  "picture_25.jpg",
+  "picture_26.jpg",
+  "picture_27.jpg",
+  "picture_28.jpg",
+  "picture_29.jpg",
+  "picture_30.jpg",
+  "picture_31.jpg",
+  "picture_32.jpg",
+  "picture_33.jpg",
+  "picture_34.jpg",
+  "picture_35.jpg",
+  "picture_36.jpg",
+  "picture_37.jpg",
+  "picture_38.jpg",
+  "picture_39.jpg",
+  "picture_40.jpg",
+  "picture_41.jpg",
+  "picture_42.jpg",
+  "picture_43.jpg",
+  "picture_44.jpg",
+];
+
+<div className="container">
+  <Carousel interval="3000" fade>
+    {gallery.map((prop, idx) => (
+      <Carousel.Item>
+        <Image src={"/img/2025/" + prop} />
+      </Carousel.Item>
+    ))}
+  </Carousel>
+</div>

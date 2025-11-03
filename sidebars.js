@@ -136,12 +136,12 @@ module.exports = {
       id: "2025/program",
       label: "Program",
     },
-    // TODO uncomment after workshop
-    // {
-    //   type: "doc",
-    //   id: "2025/gallery",
-    //   label: "Gallery",
-    // },
+    {
+      type: "doc",
+      id: "2025/gallery",
+      label: "Gallery",
+    },
+    // TODO uncomment when ready
     // {
     //   type: "doc",
     //   id: "2025/report",
