@@ -1,0 +1,102 @@
+---
+title: Workshop scientific report
+sidebar_id: report
+sidebar_label: Scientific report
+---
+
+**Location**: [Paul Scherrer Institute](https://www.psi.ch/en)
+
+**Dates**: Oct 20, 2025 to Oct 24, 2025
+
+**Organisers**:
+
+- Edan Bainglass
+- Caterina Barillari
+- Samantha Pearman-Kanza
+- Jörg Schaarschmidt
+- Matthew Evans
+- Joseph Rudzinski
+
+### What were the major topics discussed in the event, and how have they contributed to advancing the state of the art?
+
+#### [Common Schemas for Workflow Exchange](https://github.com/MADICES/MADICES-2025/discussions/16)
+
+Participants explored the development and integration of the Python Workflow Definition as a standard for exchanging workflows between engines. Extending PWD to support cyclic graph structures and embedding import/export capabilities into community tools lays the foundation for reproducible, automated materials design pipelines. This work reduces fragmentation and accelerates discovery by enabling workflows to be portable and interoperable.
+
+#### [Semantic Annotation and Interoperable Data Exchange](https://github.com/MADICES/MADICES-2025/discussions/1)
+
+Refining protocols and guidelines for semantic-first data exchange was a central theme. The group focused on best practices for creating machine-readable metadata and reducing technical barriers for researchers. These efforts make FAIR data production more accessible, improving transparency and reducing redundant work.
+
+#### [ELN Interoperability and File Format Suitability](https://docs.google.com/document/d/1NcnVMAErL66h0d42wOHyhcZxRI6CIQ9Tlog_n9iuKj4/edit?tab=t.0#heading=h.6nf3rdnp5a6b)
+
+Detailed use cases were developed to assess how Electronic Lab Notebooks can support data portability across laboratories, vendors, and research data management platforms. This work addresses vendor lock-in and strengthens long-term stewardship of publicly funded research, enabling more effective collaboration and reproducibility.
+
+#### [Automation of Semantic Annotations](https://github.com/MADICES/MADICES-2025/discussions/18)
+
+The workshop examined strategies for integrating semantic annotation capabilities directly into commonly used scientific tools and pipelines. Automating these processes at the software level ensures metadata quality without requiring deep technical expertise, streamlining compliance.
+
+#### [LLM Tooling for Semantic Pipelines](https://github.com/MADICES/MADICES-2025/discussions/24)
+
+Discussions on leveraging AI focused on improving semantic data pipelines, enhancing automation, and reducing human error. These approaches promise safer, more transparent laboratory workflows.
+
+#### [FAIR Instrument Control](https://github.com/MADICES/MADICES-2025/discussions/8)
+
+Exploring how to control instruments using FAIR-compliant software highlighted opportunities for reducing complexity in experimental setups and ensuring that data generated at the source is interoperable and well-documented.
+
+#### [Community Engagement](https://github.com/MADICES/MADICES-2025/discussions/4)
+
+Recognizing that technology alone cannot achieve interoperability, the workshop developed blueprints for mobilizing diverse research communities. Strategies include training, outreach, and demonstrating the collective benefits of FAIR practices to incentivize adoption, particularly among early-career researchers.
+
+#### [Common Interfaces for ORD Exchange](https://github.com/MADICES/MADICES-2025/discussions/2)
+
+Finally, participants discussed implementing standardized interfaces for exchange across RDM platforms, further reducing silos and enabling seamless data sharing. These topics collectively advance the state of the art by creating practical standards, tools, and community frameworks that make interoperability achievable at scale. They strengthen reproducibility, accelerate innovation, and promote a more open and trustworthy scientific ecosystem.
+
+### What were the primary outcomes of this workshop, including limitations and open questions?
+
+A brief summary of outcomes:
+
+- We explored integrating Semantikon into the AiiDA workflow management system, at the workflow level, to capture input/output semantics, and provide semantic validation for AiiDA’s workflows. This fits with efforts in AiiDA to semantically annotate core objects internally, to provide full semantic meaning to AiiDA’s provenance graphs.
+
+- Two connected hackathon-style LLM-based projects were initiated during the MADICES3. The first, “herbert”, investigated the automation of semantic annotation from semi-structured source data in cases where a suitable ontology already exists. The second, “RDMage”, made use of “herbert” and other tools to provide an agent that reviews digital research objects and provides a report assessing compliance with FAIR principles, possible semantic integrations, and whether enough “out-of-band” data has been included for an experiment or otherwise to be reproduced. This heuristic review can suggest not just missing data values, but missing fields in the schema that should be required.
+
+- At MADICES 3, we introduced the PREMISE-developed RO-Crate-Schema-Plus standard to the ELN community and, through a series of tests, gathered feedback regarding its usability in practice, and polled interest in future integration of the Schema Plus standard into ELNs beyond openBIS.
+
+- Another approach to interoperability arose at MADICES 3 - FINALES-mediated workflows across ELN-WFMS covering experimental/simulation data. Here, the FINALES platform is actively being considered as a middle-layer between ELNs and WFMSs, facilitating standard communications between the platforms, thus avoiding specific platform API usage.
+
+- A practical prototype standard and implementation was developed for automatic upload of raw data from instruments in an RDM platform-agnostic way via RO-Crate. Rather than putting the burden on each lab or instrument to write connectors to each RDM platform, instead each RDM platform simply has to announce support for this standard.
+
+- The workflow interoperability group advanced the Python Workflow Definition (PWD) toward becoming a practical cross-platform workflow exchange standard. Participants extended the PWD specification to support cyclic workflow graphs (e.g., while loops), a critical capability for representing realistic scientific workflows that are inherently iterative or adaptive. In parallel, multiple demonstrators were produced to show how PWD can be integrated into existing community tools, including a new NOMAD parser plugin for importing PWD-defined workflows and an export prototype from the Per Queue workflow engine. These examples highlighted both the feasibility of cross-engine workflow mobility and open questions, such as how to handle dynamic, runtime-determined workflow branching or differences in execution semantics across engines.
+
+### What was the take-home message for the participants?
+
+Building an open, interoperable research ecosystem is a socio-technical endeavour that requires people at its core, and as such needs education and engagement. Community- developed tools and best practices improve the production of FAIR data and facilitate interoperable data exchange between systems (e.g. ELNs), whilst training and supporting researchers strengthens adoption. Integrating these solutions at the point of data creation strengthens reproducibility and accelerates innovation.
+
+### Does the outcome(s) of the workshop hold potential for societal benefits?
+
+The 2025 MADICES Workshop addressed major barriers that prevent scientific data, software, and workflows from being reused across disciplines and platforms. By advancing interoperability, automation, and semantic clarity in data pipelines, the workshop’s outcomes contribute to a more transparent, efficient, and trustworthy research ecosystem.
+
+More specifically:
+
+The development of common schemas for workflow exchange lays the groundwork for reusable and reproducible materials-design pipelines, with the potential to significantly shorten discovery timelines.
+
+The ELN Interoperability use cases support the portability of experimental data across laboratories, vendors, and RDM platforms. This reduces lock-in, strengthens long-term stewardship of publicly funded research, and enables more effective collaboration in fields where reproducibility is critical.
+
+Advances in semantic-first data-exchange guidelines and community-driven best practices collectively lower the barrier to producing FAIR data at scale. By enabling researchers to generate high-quality metadata without deep technical expertise, these efforts democratize access to reliable scientific information, reduce redundant work, and accelerate innovation cycles.
+
+The development of practical and reusable blueprints for mobilizing diverse research communities toward interoperability strengthens open-science culture, supports early-career researchers, and promotes broader participation in FAIR data practices.
+
+Discussions on AI/LLM-based tooling and FAIR instrument control further point toward safer, more transparent laboratory automation with reduced human error and improved sustainability.
+
+Taken together, these outcomes support a more open, interoperable, and efficient scientific infrastructure that benefits society through faster discovery, improved verification of scientific claims, and better transfer of research results into industry, policy, and education.
+
+### Are there tangible outcomes of the workshop (e.g., publications, new collaborations, plans for proposal submission, software developments, etc.)?
+
+MADICES 3 enabled a vast level of knowledge exchange, which in turn has fostered new collaborations, insightful discussions and technical examples committed to the GitHub Repository. As a consequence of these a number of reports were generated, which provide valuable information to the community, and can provide the basis for some further research and scientific papers.
+
+- PWD Extension to while loops; NOMAD parser plugin for PWD; PWD export prototype from the Per Queue workflow engine.
+- ORD exchange in the context of simulation workflows initiated by an ELN, executed by a WFMS, and mediated by FINALES, with two-way ORD exchange resulting in new research data deposited in the ELN.
+- FAIR control of instruments: An implementation and standard for automatic upload from instruments in a platform-agnostic way.
+
+### What measures did you take to promote inclusivity (gender, geographical provenance of participants and speakers, career stage, disabilities, etc.)?
+
+The organisers utilised their networks to invite a diverse range of participants, in addition to using GitHub, social media, and conferences to identify relevant individuals in the field. There was a strong focus on supporting early career researchers, and funds were made available to support those who were otherwise unable attend. In total 82 individuals (15 female, 67 male) were offered the ability to attend, through a combination of invitations, and requests to attend after hearing about the event. In total 48 individuals (7 female, 41 male) were able to attend, spanning 23 institutions and 7 countries. We organised several pre-workshop meetings for participants to present their work and open up initial dialogues to identify areas of interests. This fostered a community spirit and engaged the attendees in the months leading up to the meeting. After the workshop we also sent out our own feedback form to help us plan for the next MADICES event.

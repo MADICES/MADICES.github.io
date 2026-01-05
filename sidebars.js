@@ -141,12 +141,11 @@ module.exports = {
       id: "2025/gallery",
       label: "Gallery",
     },
-    // TODO uncomment when ready
-    // {
-    //   type: "doc",
-    //   id: "2025/report",
-    //   label: "Scientific report",
-    // },
+    {
+      type: "doc",
+      id: "2025/report",
+      label: "Scientific report",
+    },
     {
       type: "link",
       label: "Discussions",
