@@ -17,7 +17,6 @@ const lightCodeTheme = themes.github;
     organizationName: "MADICES",
     projectName: "madices.github.io",
     onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
     presets: [
       [
         "@docusaurus/preset-classic",
@@ -42,6 +41,12 @@ const lightCodeTheme = themes.github;
         }),
       ],
     ],
+
+    markdown: {
+      hooks: {
+        onBrokenMarkdownLinks: "warn",
+      },
+    },
 
     plugins: [
       [
